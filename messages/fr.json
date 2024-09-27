@@ -1,26 +1,86 @@
 {
-  "IndexPage": {
-    "title": "contoh next-intl",
-    "description": "Selamat datang di contoh Next.js Internationalization (i18n)! Demo ini memperlihatkan kekuatan App Router dan cara mengelola konten multibahasa dengan lancar menggunakan next-intl."
-  },
-  "NotFoundPage": {
-    "title": "Halaman Tidak Ditemukan",
-    "description": "Ups! Sepertinya Anda menemukan halaman yang tidak ada. Jangan khawatir, sihir internasionalisasi kami masih bekerja keras di bagian lain aplikasi. Silakan kembali untuk menjelajahi lebih lanjut!"
-  },
-  "Navigation": {
-    "home": "Beranda"
-  },
-  "Footer": {
-    "copyright": "© 2024 Aplikasi Anda. Hak cipta dilindungi."
-  },
-  "ComponentTwo": {
-    "title": "SwitzerlandSwitzerlandSwitzerlandSwitzerland",
-    "text": "Hello SwitzerlandSwitzerlandSwitzerlandSwitzerland"
-  },
-  "Metadata": {
-    "Main": {
-      "title": "Swiss title ",
-      "description": "Swiss description "
+  "homePage": {
+    "metadata": {
+      "title": "Titre en français",
+      "description": "Description en français"
+    },
+    "hero": {
+      "days": "Mar-Dim",
+      "hours": "8h00 - 21h00",
+      "address1": "Rue Leschot 10, 1205",
+      "address2": "Genève, Suisse"
+    },
+    "componentTwo": {
+      "title": "Avec amour",
+      "text": "Il semble que vous soyez tombé sur une page qui n'existe pas. Ne vous inquiétez pas, notre magie d'internationalisation fonctionne encore dans d'autres parties de l'application."
+    },
+    "componentThree": {
+      "title": "Avec amour",
+      "text": "Il semble que vous soyez tombé sur une page qui n'existe pas. Ne vous inquiétez pas, notre magie d'internationalisation fonctionne encore dans d'autres parties de l'application."
+    },
+    "componentFour": {
+      "title": "Avec amour"
+    },
+    "componentFive": {
+      "title": "Suivez-nous sur les réseaux sociaux"
+    },
+    "componentSix": {
+      "title": "Sans amour",
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Numéro de téléphone",
+      "date": "Date",
+      "time": "Heure",
+      "quantity": "Nombre de personnes",
+      "message": "Des exigences particulières?",
+      "send": "Envoyer une demande",
+      "thankYou": "Merci pour votre demande",
+      "comfirmation": "Attendez notre confirmation"
+    },
+    "testimonials": {
+      "title1": "Ce que disent nos clients",
+      "title2": "bla bla bla"
     }
+  },
+  "menuPage": {
+    "metadata": {
+      "title": "Titre en français",
+      "description": "Description en français"
+    },
+    "menu": {
+      "underCategory": "menu"
+    }
+  },
+  "forms": {
+    "reservationForm": {
+      "name": "Entrez votre nom complet",
+      "email": "E-mail",
+      "phone": "Numéro de téléphone",
+      "date": "Date",
+      "time": "Heure",
+      "quantity": "Nombre de personnes",
+      "message": "Des exigences particulières?",
+      "send": "Envoyer une demande",
+      "thankYou": "Merci pour votre demande",
+      "comfirmation": "Attendez notre confirmation"
+    }
+  },
+  "errorPage": {
+    "metadata": {
+      "title": "Titre en français",
+      "description": "Description en français"
+    },
+    "errorTitle": "Oups! Quelque chose s'est mal passé",
+    "errorDescription": "La page que vous recherchez n'existe pas ou a été déplacée. Essayez de revenir à la page d'accueil.",
+    "errorButton": "Retour à l'accueil"
+  },
+  "notFoundPage": {
+    "metadata": {
+      "title": "Page non trouvée",
+      "description": "Oups! Il semble que vous soyez tombé sur une page qui n'existe pas. Ne vous inquiétez pas, notre magie d'internationalisation fonctionne encore dans d'autres parties de l'application. N'hésitez pas à revenir en arrière pour explorer davantage!"
+    },
+    "errorTitle": "Oups! Quelque chose s'est mal passé",
+    "errorDescription": "La page que vous recherchez n'existe pas ou a été déplacée. Essayez de revenir à la page d'accueil.",
+    "errorButton": "Retour à l'accueil"
   }
 }

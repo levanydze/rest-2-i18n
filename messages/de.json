@@ -1,26 +1,86 @@
 {
-  "IndexPage": {
-    "title": "contoh next-intl",
-    "description": "Selamat datang di contoh Next.js Internationalization (i18n)! Demo ini memperlihatkan kekuatan App Router dan cara mengelola konten multibahasa dengan lancar menggunakan next-intl."
-  },
-  "NotFoundPage": {
-    "title": "Halaman Tidak Ditemukan",
-    "description": "Ups! Sepertinya Anda menemukan halaman yang tidak ada. Jangan khawatir, sihir internasionalisasi kami masih bekerja keras di bagian lain aplikasi. Silakan kembali untuk menjelajahi lebih lanjut!"
-  },
-  "Navigation": {
-    "home": "Beranda"
-  },
-  "Footer": {
-    "copyright": "© 2024 Aplikasi Anda. Hak cipta dilindungi."
-  },
-  "ComponentTwo": {
-    "title": "SwitzerlandSwitzerlandSwitzerlandSwitzerland",
-    "text": "Hello SwitzerlandSwitzerlandSwitzerlandSwitzerland"
-  },
-  "Metadata": {
-    "Main": {
-      "title": "Swiss title ",
-      "description": "Swiss description "
+  "homePage": {
+    "metadata": {
+      "title": "Deutscher Titel",
+      "description": "Deutsche Beschreibung"
+    },
+    "hero": {
+      "days": "Di-So",
+      "hours": "8:00 Uhr - 21:00 Uhr",
+      "address1": "Rue Leschot 10, 1205",
+      "address2": "Genf, Schweiz"
+    },
+    "componentTwo": {
+      "title": "Mit Liebe",
+      "text": "Es scheint, als ob Sie auf eine Seite gestoßen sind, die nicht existiert. Keine Sorge, unsere Magie der Internationalisierung funktioniert noch in anderen Teilen der App."
+    },
+    "componentThree": {
+      "title": "Mit Liebe",
+      "text": "Es scheint, als ob Sie auf eine Seite gestoßen sind, die nicht existiert. Keine Sorge, unsere Magie der Internationalisierung funktioniert noch in anderen Teilen der App."
+    },
+    "componentFour": {
+      "title": "Mit Liebe"
+    },
+    "componentFive": {
+      "title": "Folgen Sie uns auf Social Media"
+    },
+    "componentSix": {
+      "title": "Ohne Liebe",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefonnummer",
+      "date": "Datum",
+      "time": "Zeit",
+      "quantity": "Anzahl der Personen",
+      "message": "Besondere Anforderungen?",
+      "send": "Anfrage senden",
+      "thankYou": "Vielen Dank für Ihre Anfrage",
+      "comfirmation": "Warten Sie auf unsere Bestätigung"
+    },
+    "testimonials": {
+      "title1": "Was unsere Kunden sagen",
+      "title2": "bla bla bla"
     }
+  },
+  "menuPage": {
+    "metadata": {
+      "title": "Deutscher Titel",
+      "description": "Deutsche Beschreibung"
+    },
+    "menu": {
+      "underCategory": "Menü"
+    }
+  },
+  "forms": {
+    "reservationForm": {
+      "name": "Geben Sie Ihren vollständigen Namen ein",
+      "email": "E-Mail",
+      "phone": "Telefonnummer",
+      "date": "Datum",
+      "time": "Zeit",
+      "quantity": "Anzahl der Personen",
+      "message": "Besondere Anforderungen?",
+      "send": "Anfrage senden",
+      "thankYou": "Vielen Dank für Ihre Anfrage",
+      "comfirmation": "Warten Sie auf unsere Bestätigung"
+    }
+  },
+  "errorPage": {
+    "metadata": {
+      "title": "Deutscher Titel",
+      "description": "Deutsche Beschreibung"
+    },
+    "errorTitle": "Hoppla! Etwas ist schief gelaufen",
+    "errorDescription": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Versuchen Sie, zur Startseite zurückzukehren.",
+    "errorButton": "Zurück zur Startseite"
+  },
+  "notFoundPage": {
+    "metadata": {
+      "title": "Seite nicht gefunden",
+      "description": "Hoppla! Es scheint, dass Sie auf eine Seite gestoßen sind, die nicht existiert. Keine Sorge, unsere Internationalisierungs-Magie funktioniert noch in anderen Teilen der App. Fühlen Sie sich frei, zurück zu navigieren, um mehr zu entdecken!"
+    },
+    "errorTitle": "Hoppla! Etwas ist schief gelaufen",
+    "errorDescription": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Versuchen Sie, zur Startseite zurückzukehren.",
+    "errorButton": "Zurück zur Startseite"
   }
 }
