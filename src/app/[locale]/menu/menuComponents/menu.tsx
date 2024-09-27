@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./menu.module.css";
 import ServerCard from "./card/ServerCard";
-import { fetchCategoriesIfUpdated } from "../fetchingData";
+import { fetchCategories } from "../fetchingData";
 import { useLocale } from "next-intl";
 import { MenuItemProps } from "./menuTypes";
-import { defaultLocale, fireBaseRoute } from "@/Manager/navigation";
+import { defaultLocale } from "@/Manager/navigation";
 import { getTranslations } from "next-intl/server";
 
-export const revalidate = 300; // Revalidate every 5 minutes
+export const revalidate = 86400; // Revalidate once a day
 
 export default async function Menu() {
   const locale = useLocale(); // Get current locale
-  const categories = await fetchCategoriesIfUpdated(fireBaseRoute); // Fetch categories
+  const categories = await fetchCategories(); // Fetch categories
   const t = await getTranslations("menuPage.menu");
 
   if (!categories) {
@@ -42,7 +42,7 @@ export default async function Menu() {
                 <div className={styles.itemContainer}>
                   {Object.values(category.items).map((item: MenuItemProps) => (
                     <ServerCard
-                      key={item.id}
+                      key="{item.id}"
                       id={item.id}
                       image={item.image}
                       names={item.names}

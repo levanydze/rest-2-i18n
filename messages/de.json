@@ -79,8 +79,8 @@
       "title": "Seite nicht gefunden",
       "description": "Hoppla! Es scheint, dass Sie auf eine Seite gestoßen sind, die nicht existiert. Keine Sorge, unsere Internationalisierungs-Magie funktioniert noch in anderen Teilen der App. Fühlen Sie sich frei, zurück zu navigieren, um mehr zu entdecken!"
     },
-    "errorTitle": "Hoppla! Etwas ist schief gelaufen",
-    "errorDescription": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Versuchen Sie, zur Startseite zurückzukehren.",
-    "errorButton": "Zurück zur Startseite"
+    "title": "Hoppla! Etwas ist schief gelaufen",
+    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Versuchen Sie, zur Startseite zurückzukehren.",
+    "button": "Zurück zur Startseite"
   }
 }

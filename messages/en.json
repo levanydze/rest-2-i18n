@@ -1,4 +1,10 @@
 {
+  "navigation": {
+    "home": "Home",
+    "menu": "Menu",
+    "story": "Our Story",
+    "reservation": "Reservation"
+  },
   "homePage": {
     "metadata": {
       "title": "english title ",
@@ -80,8 +86,8 @@
       "title": "Page Not Found",
       "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
     },
-    "errorTitle": "Oops! Something went wrong",
-    "errorDescription": "  The page you're looking for doesn't exist or has been moved. Trygoing back to the homepage.",
-    "errorButton": "Back To Home"
+    "title": "Oops! Something went wrong",
+    "description": "  The page you're looking for doesn't exist or has been moved. Trygoing back to the homepage.",
+    "button": "Back To Home"
   }
 }

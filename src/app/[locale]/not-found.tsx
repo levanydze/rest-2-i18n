@@ -23,10 +23,10 @@ export default function NotFoundPage() {
             maxWidth: "600px",
           }}
         >
-          <h1 className="heading3">{t("notFoundTitle")}</h1>
-          <p className="paragraph">{t("notFoundDescription")}</p>
+          <h1 className="heading3">{t("title")}</h1>
+          <p className="paragraph">{t("description")}</p>
           <Link href="/" className={`button `}>
-            {t("notFoundButton")}
+            {t("button")}
           </Link>
         </div>
       </div>

@@ -79,8 +79,8 @@
       "title": "Pagina non trovata",
       "description": "Oops! Sembra che tu abbia trovato una pagina che non esiste. Non preoccuparti, la nostra magia di internazionalizzazione sta ancora funzionando in altre parti dell'app. Sentiti libero di tornare indietro per esplorare di più!"
     },
-    "errorTitle": "Oops! Qualcosa è andato storto",
-    "errorDescription": "La pagina che stai cercando non esiste o è stata spostata. Prova a tornare alla pagina principale.",
-    "errorButton": "Torna alla home"
+    "title": "Oops! Qualcosa è andato storto",
+    "description": "La pagina che stai cercando non esiste o è stata spostata. Prova a tornare alla pagina principale.",
+    "button": "Torna alla home"
   }
 }

@@ -1,12 +1,14 @@
+// fetchingData.ts
 import { ref, get } from "firebase/database";
 import { db } from "./firebase"; // Import the db instance
 import { MenuItemProps, CategoryProps } from "./menuComponents/menuTypes";
 import { fireBaseRoute } from "@/Manager/navigation";
 
-// Cache to store the last checked timestamp
+// Cache to store the last checked timestamp and categories
 let lastFetchedTimestamp: number | null = null;
+let cachedCategories: CategoryProps[] | null = null;
 
-// Function to check if the restaurant menu has been updated
+// Function to check if the menu has been updated
 async function hasMenuUpdated(fireBaseRoute: string): Promise<boolean> {
   try {
     const dbRef = ref(db, `restaurants/${fireBaseRoute}/menu/lastUpdated`);
@@ -32,19 +34,19 @@ async function hasMenuUpdated(fireBaseRoute: string): Promise<boolean> {
   }
 }
 
-// Fetch all categories if the menu is updated
-export async function fetchCategoriesIfUpdated(
-  fireBaseRoute: string
-): Promise<CategoryProps[] | null> {
-  // Check if the menu has been updated
-  const isUpdated = await hasMenuUpdated(fireBaseRoute);
-
-  if (!isUpdated) {
-    console.log("Menu has not been updated since the last fetch.");
-    return null;
-  }
-
+// Fetch all categories only if updated
+export async function fetchCategories(): Promise<CategoryProps[] | null> {
   try {
+    // Check if the menu has been updated
+    const isUpdated = await hasMenuUpdated(fireBaseRoute);
+
+    // If data hasn't been updated, return the cached categories
+    if (!isUpdated && cachedCategories) {
+      console.log("Returning cached categories.");
+      return cachedCategories;
+    }
+
+    // Fetch new categories data
     const dbRef = ref(db, `restaurants/${fireBaseRoute}/menu/categories`);
     const snapshot = await get(dbRef);
 
@@ -54,7 +56,9 @@ export async function fetchCategoriesIfUpdated(
     }
 
     const data = snapshot.val();
-    return Object.values(data) as CategoryProps[];
+    cachedCategories = Object.values(data) as CategoryProps[]; // Cache the fetched categories
+
+    return cachedCategories;
   } catch (error) {
     console.error("Error fetching categories:", error);
     return null;
@@ -64,21 +68,17 @@ export async function fetchCategoriesIfUpdated(
 // Fetch individual menu item by ID
 export async function fetchMenuItem(id: string): Promise<MenuItemProps | null> {
   try {
-    const dbRef = ref(db, `restaurants/${fireBaseRoute}/menu/categories`);
-    const snapshot = await get(dbRef);
+    // Fetch categories (either from cache or from Firebase)
+    const categories = await fetchCategories();
 
-    if (!snapshot.exists()) {
-      console.error("No menu data available");
+    if (!categories) {
+      console.error("No categories data available for menu item search");
       return null;
     }
 
-    const data = snapshot.val();
-
     // Loop through all categories to find the item by ID
-    for (const categoryKey in data) {
-      const category = data[categoryKey];
+    for (const category of categories) {
       if (category.items && category.items[id]) {
-        // Return the menu item as MenuItemProps
         return category.items[id] as MenuItemProps;
       }
     }

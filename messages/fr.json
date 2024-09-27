@@ -79,8 +79,8 @@
       "title": "Page non trouvée",
       "description": "Oups! Il semble que vous soyez tombé sur une page qui n'existe pas. Ne vous inquiétez pas, notre magie d'internationalisation fonctionne encore dans d'autres parties de l'application. N'hésitez pas à revenir en arrière pour explorer davantage!"
     },
-    "errorTitle": "Oups! Quelque chose s'est mal passé",
-    "errorDescription": "La page que vous recherchez n'existe pas ou a été déplacée. Essayez de revenir à la page d'accueil.",
-    "errorButton": "Retour à l'accueil"
+    "title": "Oups! Quelque chose s'est mal passé",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée. Essayez de revenir à la page d'accueil.",
+    "button": "Retour à l'accueil"
   }
 }
