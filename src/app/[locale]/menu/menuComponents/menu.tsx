@@ -4,13 +4,15 @@ import ServerCard from "./card/ServerCard";
 import { fetchCategoriesIfUpdated } from "../fetchingData";
 import { useLocale } from "next-intl";
 import { MenuItemProps } from "./menuTypes";
-import { fireBaseRoute } from "@/Manager/navigation";
+import { defaultLocale, fireBaseRoute } from "@/Manager/navigation";
+import { getTranslations } from "next-intl/server";
 
 export const revalidate = 300; // Revalidate every 5 minutes
 
-export default async function Menu({ menuTitle }: { menuTitle: string }) {
+export default async function Menu() {
   const locale = useLocale(); // Get current locale
   const categories = await fetchCategoriesIfUpdated(fireBaseRoute); // Fetch categories
+  const t = await getTranslations("menuPage.menu");
 
   if (!categories) {
     return (
@@ -19,9 +21,7 @@ export default async function Menu({ menuTitle }: { menuTitle: string }) {
       </div>
     );
   }
-
   const sortedCategories = categories.sort((a, b) => a.priority - b.priority);
-
   return (
     <div className={styles.cardWrapper}>
       <section className="section section-medium">
@@ -30,14 +30,14 @@ export default async function Menu({ menuTitle }: { menuTitle: string }) {
             // Access category translations for the current locale, fallback to 'en'
             const categoryName =
               category.translations?.[locale] ||
-              category.translations?.["en"] ||
+              category.translations?.[defaultLocale] ||
               "Unnamed Category";
 
             return (
               <div key={category.id} className={styles.menuWrapper}>
                 <div className={styles.menuTitles}>
                   <h3 className="font2 color4 heading2">{categoryName}</h3>
-                  <span className="heading3 white">{menuTitle}</span>
+                  <span className="heading3 white">{t("underCategory")}</span>
                 </div>
                 <div className={styles.itemContainer}>
                   {Object.values(category.items).map((item: MenuItemProps) => (

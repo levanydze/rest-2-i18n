@@ -16,8 +16,9 @@ export default function StandartNav() {
           const localizedUrl =
             item.url === "/" ? `/${locale}` : `/${locale}${item.url}`;
           const isActive =
-            pathname === localizedUrl ||
-            pathname.startsWith(localizedUrl + "/");
+            item.url === "/"
+              ? pathname === `/${locale}` // Exact match for homepage
+              : pathname.startsWith(localizedUrl); // For other URLs, starts with localized URL
 
           return (
             <li key={item.url} className={styles.navItem}>

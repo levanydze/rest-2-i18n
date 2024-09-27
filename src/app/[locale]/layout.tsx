@@ -1,13 +1,11 @@
 import "@/src/app/globals.css";
-// import { Analytics } from "@vercel/analytics/react";
+import { getTranslations } from "next-intl/server";
+import { Analytics } from "@vercel/analytics/react";
 
 // SEO Metadata
-import { Metadata } from "next";
 import { companyDomain, companyName } from "@/Manager/info";
-useTranslations;
-
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Metadata.Main");
+export async function generateMetadata() {
+  const t = await getTranslations("homePage.metadata");
   return {
     metadataBase: new URL(companyDomain),
     title: {
@@ -52,8 +50,6 @@ const paytone = Paytone_One({
 
 import Header from "@/src/components/Header/Header";
 import Footer from "@/src/components/Footer/Footer";
-import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -73,7 +69,7 @@ export default function LangLayout({
         <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
           <Header />
           <div>{children}</div>
-          {/* <Analytics /> */}
+          <Analytics />
           <Footer />
         </div>
       </body>

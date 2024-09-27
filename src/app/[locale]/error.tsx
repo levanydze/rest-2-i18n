@@ -1,22 +1,36 @@
 "use client";
-import React from "react";
-import ErrorDiv from "@/src/components/Error-NotFound/error/ErrorComponent";
-// import { getMetadata } from "@/Control/seo";
-// import { defaultLanguage } from "@/Control/navigation";
-// import { Metadata } from "next";
-// export async function generateMetadata({
-//   params,
-// }: {
-//   params?: { lang?: string };
-// }): Promise<Metadata> {
-//   const lang = params?.lang || defaultLanguage;
-//   return getMetadata("error", lang);
-// }
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
-function error() {
-  return <ErrorDiv />;
+export function generateMetadata() {
+  const t = useTranslations("errorPage.metadata");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
 }
 
-export default error;
-
-//must fix
+export default function error() {
+  const t = useTranslations("errorPage");
+  return (
+    <section className={`section section-dark `}>
+      <div className="container">
+        <div
+          style={{
+            textAlign: "center",
+            margin: "0 auto",
+            padding: "50px 20px",
+            maxWidth: "600px",
+          }}
+        >
+          <h1 className="heading2">404</h1>
+          <h2 className="heading3">{t("errorTitle")}</h2>
+          <p className="paragraph">{t("errorDescription")}</p>
+          <Link href="/" className={`button `}>
+            {t("errorButton")}
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}

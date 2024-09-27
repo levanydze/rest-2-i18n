@@ -1,5 +1,5 @@
 .titlesWrapper {
-  align-items: end;
+  align-items: left;
   display: inline-block;
   text-align: right;
 }
@@ -58,7 +58,7 @@
 .arrowWrapper {
   margin-bottom: 40px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   font-size: 50px;
 }
 .arrowWrapper svg {

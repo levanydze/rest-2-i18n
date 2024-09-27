@@ -1,5 +1,9 @@
 {
   "homePage": {
+    "metadata": {
+      "title": "english title ",
+      "description": "englishdescription "
+    },
     "hero": {
       "days": "Tue-Sun",
       "hours": "8:00am - 9:00 pm",
@@ -11,7 +15,8 @@
       "text": "With Lseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don't"
     },
     "componentThree": {
-      "title": "With Love"
+      "title": "With Love",
+      "text": "With Lseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don't"
     },
     "componentFour": {
       "title": "With Love"
@@ -37,21 +42,13 @@
       "title2": "blablabla"
     }
   },
-  "NotFoundPage": {
-    "title": "Page Not Found",
-    "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
-  },
-  "Navigation": {
-    "home": "Home"
-  },
-  "Footer": {
-    "copyright": "© 2024 Your App. All rights reserved."
-  },
-
-  "Metadata": {
-    "Main": {
+  "menuPage": {
+    "metadata": {
       "title": "english title ",
       "description": "englishdescription "
+    },
+    "menu": {
+      "underCategory": "menu"
     }
   },
   "forms": {
@@ -67,5 +64,24 @@
       "thankYou": "Thank you for your request",
       "comfirmation": "Wait for our confirmation"
     }
+  },
+  "errorPage": {
+    "metadata": {
+      "title": "english title ",
+      "description": "englishdescription "
+    },
+    "errorTitle": "Oops! Something went wrong",
+    "errorDescription": "  The page you're looking for doesn't exist or has been moved. Trygoing back to the homepage.",
+    "errorButton": "Back To Home"
+  },
+
+  "notFoundPage": {
+    "metadata": {
+      "title": "Page Not Found",
+      "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
+    },
+    "errorTitle": "Oops! Something went wrong",
+    "errorDescription": "  The page you're looking for doesn't exist or has been moved. Trygoing back to the homepage.",
+    "errorButton": "Back To Home"
   }
 }

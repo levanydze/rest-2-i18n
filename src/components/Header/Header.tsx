@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./Header.module.css";
-// import BurgerNav from "./Navigations/BurgerNav/BurgerNav";
-// import StandartNav from "./Navigations/StandartNav/StandartNav";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
@@ -21,7 +19,6 @@ export default function Header() {
       <section className="section header">
         <div className="container">
           <div className={styles.navigationWrapper}>
-            {/* Logo */}
             <Link href={`/`} onClick={navClose} className={styles.logoWrapper}>
               <Image
                 className="logo"
