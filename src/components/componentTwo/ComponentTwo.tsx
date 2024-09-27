@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./ComponentTwo.module.css";
 import { useTranslations } from "next-intl";
-import image from "@/../public/images/homePage/ComponentTwo.jpg";
+import image from "@/public/images/homePage/ComponentTwo.jpg";
 
 export default function ComponentTwo() {
   const t = useTranslations("homePage.componentTwo");

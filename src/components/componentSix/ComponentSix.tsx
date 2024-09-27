@@ -1,12 +1,12 @@
 import Image from "next/image";
-import styles from "./ComponentSex.module.css";
+import styles from "./ComponentSix.module.css";
 import { useTranslations } from "next-intl";
 // import images from "@/Restaurant-02/json/images.json";
 import ReservationContactForm from "@/src/components/ReservationContactForm/ReservationContactForm";
 // import { contactFormProps } from "@/components/ReservationContactForm/ReservationContactForm";
 import image from "@/public/images/homePage/ComponentSix.jpg";
 
-export default function ComponentSex() {
+export default function ComponentSix() {
   const t = useTranslations("homePage.componentSix");
   return (
     <section className="section section-light">

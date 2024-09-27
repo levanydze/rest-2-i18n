@@ -1,6 +1,6 @@
 import { companyDomain, companyName } from "@/Manager/info";
 import ComponentFour from "@/src/components/componentFour/ComponentFour";
-import ComponentSex from "@/src/components/componentSex/ComponentSex";
+import ComponentSix from "@/src/components/componentSix/ComponentSix";
 import ComponentThree from "@/src/components/componentThree/ComponentThree";
 import ComponentTwo from "@/src/components/componentTwo/ComponentTwo";
 import Hero from "@/src/components/Hero/Hero";
@@ -41,7 +41,7 @@ export default async function Home() {
         title2={t("testimonials.title2")}
       />
       <ComponentThree />
-      <ComponentSex />
+      <ComponentSix />
       <ComponentFour />
     </div>
   );
