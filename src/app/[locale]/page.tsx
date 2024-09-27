@@ -1,8 +1,8 @@
 import { companyDomain, companyName } from "@/Manager/info";
-// import ComponentFour from "@/src/components/componentFour/ComponentFour";
-// import ComponentSex from "@/src/components/componentSex/ComponentSex";
-// import ComponentThree from "@/src/components/componentThree/ComponentThree";
-// import ComponentTwo from "@/src/components/componentTwo/ComponentTwo";
+import ComponentFour from "@/src/components/componentFour/ComponentFour";
+import ComponentSex from "@/src/components/componentSex/ComponentSex";
+import ComponentThree from "@/src/components/componentThree/ComponentThree";
+import ComponentTwo from "@/src/components/componentTwo/ComponentTwo";
 import Hero from "@/src/components/Hero/Hero";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { getTranslations } from "next-intl/server";
@@ -35,14 +35,14 @@ export default async function Home() {
   return (
     <div className="fadeOut">
       <Hero />
-      {/* <ComponentTwo /> */}
+      <ComponentTwo />
       <Testimonials
         title1={t("testimonials.title1")}
         title2={t("testimonials.title2")}
       />
-      {/* <ComponentThree /> */}
-      {/* <ComponentSex /> */}
-      {/* <ComponentFour /> */}
+      <ComponentThree />
+      <ComponentSex />
+      <ComponentFour />
     </div>
   );
 }
