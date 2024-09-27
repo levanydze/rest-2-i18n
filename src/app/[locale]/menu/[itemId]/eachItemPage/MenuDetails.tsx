@@ -1,8 +1,8 @@
 import styles from "./MenuDetails.module.css";
 import Image from "next/image";
-import NotFoundComponent from "@/src/components/Error-NotFound/notFound/NotFoundComponent";
 import { useLocale } from "next-intl";
 import { menuCarPlaceHoldImg } from "@/Manager/navigation";
+import { notFound } from "next/navigation";
 
 interface MenuDetailsProps {
   item: {
@@ -21,7 +21,7 @@ export default function MenuDetails({ item }: MenuDetailsProps) {
   const locale = useLocale(); // Use locale directly from next-intl
 
   if (!item) {
-    return <NotFoundComponent />;
+    return <p>Error: Item not found</p>;
   }
 
   const itemName = item.names[locale] || item.names["en"] || "Unnamed Item";
