@@ -3,14 +3,15 @@
   height: 400px;
   background-color: var(--color5);
   border-radius: 10px;
-  overflow: hidden;
   background: linear-gradient(236.43deg, #3f4c39 21.1%, #262626 68.07%);
-  box-shadow: -10px 10px 24px rgba(0, 0, 0, 0.25),
+  /* box-shadow: -10px 10px 24px rgba(0, 0, 0, 0.25),
     inset -40px 40px 90px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+  border-radius: 8px; */
 }
 
 .cardWrapper img {
+  border-radius: 10px;
+
   object-fit: cover;
   width: 100%;
   height: 50%;
@@ -46,8 +47,7 @@
   height: 52px;
   border-radius: 9px;
   font-size: 30px;
-  background: #007aff;
-  color: white;
+
   opacity: 0.8;
   border-radius: 9px;
   position: relative;
@@ -61,15 +61,19 @@
   opacity: 80%;
 }
 
-.details div:nth-child(1) {
+.new {
   font-family: var(--font1);
   font-weight: 900;
+  background: #007aff;
+  color: white;
 }
-.details div:nth-child(2) {
+.heart {
+  color: white;
+
   color: rgba(255, 0, 0, 0.815);
   background-color: var(--color2);
 }
-.details div:nth-child(3) {
+.vegan {
   background-color: hsla(144, 100%, 38%, 0.8);
 }
 
@@ -81,13 +85,14 @@
   justify-content: center;
   font-size: 25px;
   color: var(--color4);
-  font-weight: 900;
+  font-weight: 800;
   border-radius: 9px;
   align-items: center;
+  font-family: var(--font2);
 }
 
 .priceWrap span {
   font-size: 13px;
   margin-top: 14px;
-  margin-left: 5px;
+  margin-left: 2px;
 }

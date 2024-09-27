@@ -31,7 +31,7 @@ export default function ServerCard({
     descriptions?.[locale] || description || "No description available"; // Multilingual descriptions, fallback to single description
 
   return (
-    <div className={styles.cardWrapper}>
+    <div className={`shadow-black-s ${styles.cardWrapper}`}>
       <Link href={`/${locale}/${dynamicPageRoute}/${id}`}>
         <Image
           src={image || menuCarPlaceHoldImg}
@@ -55,20 +55,20 @@ export default function ServerCard({
           </h3>
         </div>
 
-        <div className={styles.tagsPriceWrap}>
+        <div className={` ${styles.tagsPriceWrap}`}>
           <div className={styles.details}>
             {option2 && (
-              <div>
+              <div className={styles.new}>
                 <p className={styles.eachItem}>N</p>
               </div>
             )}
             {option3 && (
-              <div>
+              <div className={styles.heart}>
                 <FaHeart className={styles.eachItem} />
               </div>
             )}
             {option1 && (
-              <div>
+              <div className={styles.vegan}>
                 <LuVegan className={styles.eachItem} />
               </div>
             )}

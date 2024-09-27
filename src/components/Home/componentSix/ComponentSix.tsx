@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./ComponentSix.module.css";
 import { useTranslations } from "next-intl";
 // import images from "@/Restaurant-02/json/images.json";
-import ReservationContactForm from "@/src/components/ReservationContactForm/ReservationContactForm";
+import ReservationContactForm from "@/src/components/Home/componentSix/ReservationContactForm/ReservationContactForm";
 // import { contactFormProps } from "@/components/ReservationContactForm/ReservationContactForm";
 import image from "@/public/images/homePage/ComponentSix.jpg";
 

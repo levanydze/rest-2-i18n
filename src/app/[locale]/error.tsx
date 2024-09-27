@@ -1,13 +1,13 @@
 "use client";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 // Static metadata
 export const generateMetadata = () => {
-  const t = useTranslations("errorPage.metadata");
+  // const t = useTranslations("errorPage.metadata");
   return {
-    title: t("title"),
-    description: t("description"),
+    // title: t("title"),
+    // description: t("description"),
   };
 };
 
@@ -36,3 +36,5 @@ export default function ErrorPage() {
     </section>
   );
 }
+
+// MUST FIX

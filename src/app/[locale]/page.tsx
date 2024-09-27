@@ -1,8 +1,8 @@
 import { companyDomain, companyName } from "@/Manager/info";
-import ComponentFour from "@/src/components/componentFour/ComponentFour";
-import ComponentSix from "@/src/components/componentSix/ComponentSix";
-import ComponentThree from "@/src/components/componentThree/ComponentThree";
-import ComponentTwo from "@/src/components/componentTwo/ComponentTwo";
+import ComponentFour from "@/src/components/Home/componentFour/ComponentFour";
+import ComponentSix from "@/src/components/Home/componentSix/ComponentSix";
+import ComponentThree from "@/src/components/Home/componentThree/ComponentThree";
+import ComponentTwo from "@/src/components/Home/componentTwo/ComponentTwo";
 import Hero from "@/src/components/Hero/Hero";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { getTranslations } from "next-intl/server";

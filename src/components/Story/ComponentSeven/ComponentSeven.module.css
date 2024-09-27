@@ -1,0 +1,62 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between; /* Ensure items are on the left and right */
+  align-items: center; /* Vertically center items in the wrapper */
+  position: relative;
+}
+.textWrapper {
+  width: 50%;
+  position: relative;
+}
+
+.titlesWrapper {
+  margin-top: 10%;
+  margin-bottom: 30%;
+  max-width: max-content;
+  overflow: hidden;
+  padding: 50px 0;
+}
+.titlesWrapper h2 {
+  padding-left: 70px;
+}
+
+.titlesWrapper p {
+  padding-right: 15%;
+  margin-top: 5%;
+  text-align: right;
+}
+
+.lowerTextWrap {
+  margin-bottom: 30%;
+  width: 70%;
+  padding-left: 15%;
+}
+
+.chefContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-height: 700px;
+}
+.chefContainer img {
+  object-fit: contain;
+  margin-left: -40px;
+}
+
+.svgWrapper {
+  position: absolute;
+  top: 50%; /* Position from the top */
+  transform: translateY(-50%); /* Adjust to vertically center */
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  left: -150%;
+  margin-right: -100px;
+  z-index: -1;
+}
+
+.svgWrapper svg {
+  width: 2000px;
+  height: auto;
+  object-fit: fill;
+}
