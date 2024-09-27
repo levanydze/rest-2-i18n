@@ -1,5 +1,5 @@
 import { companyDomain } from "@/Manager/info";
-import { fetchCategoriesIfUpdated } from "@/src/app/[locale]/menu/fetchingData";
+import { fetchCategories } from "@/src/app/[locale]/menu/fetchingData";
 import {
   fireBaseRoute,
   navItems,
@@ -8,7 +8,7 @@ import {
 
 export default async function sitemap() {
   try {
-    const categories = await fetchCategoriesIfUpdated(fireBaseRoute);
+    const categories = await fetchCategories();
     const slugUrls =
       categories?.flatMap((category) => {
         if (!category.items) {
