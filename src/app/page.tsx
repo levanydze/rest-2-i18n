@@ -3,5 +3,5 @@ import { redirect } from "next/navigation";
 const locale = useLocale;
 
 export default function RootPage() {
-  redirect(locale());
+  return <div className="button">hello</div>;
 }
