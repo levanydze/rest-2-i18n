@@ -19,7 +19,7 @@ export async function generateMetadata() {
       url: companyDomain,
       images: [
         {
-          url: "@/public/images/opengraph-image.jpg",
+          // url: "@/public/images/opengraph-image.jpg",
           width: 800,
           height: 600,
           alt: companyName + companyDomain,
