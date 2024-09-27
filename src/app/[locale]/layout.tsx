@@ -48,7 +48,7 @@ const paytone = Paytone_One({
 
 //components
 
-import Header from "@/src/components/Header/Header";
+// import Header from "@/src/components/Header/Header";
 import Footer from "@/src/components/Footer/Footer";
 
 interface RootLayoutProps {
@@ -67,7 +67,7 @@ export default function LangLayout({
         className={`${mulish.className} ${roboto.variable} ${paytone.variable}`}
       >
         <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
-          <Header />
+          {/* <Header /> */}
           <div>{children}</div>
           <Analytics />
           <Footer />

@@ -2,10 +2,9 @@ import Image from "next/image";
 import styles from "./Hero.module.css";
 import { companyName } from "@/Manager/info";
 import heroImage from "@//public/images/homePage/hero.jpg";
-import { useTranslations } from "next-intl";
 
 export default function Hero({ homePage }: { homePage?: boolean }) {
-  const t = useTranslations("homePage.hero");
+  // const t = useTranslations("homePage.hero");
 
   return (
     <section
@@ -23,7 +22,7 @@ export default function Hero({ homePage }: { homePage?: boolean }) {
         <div className={styles.overlay}></div>
         <div className={`caption color1 ${styles.textWrapper}`}>
           <div className="section">
-            {!homePage && (
+            {/* {!homePage && (
               <div className="container">
                 <p>
                   <span>{t("days")}</span>
@@ -36,7 +35,7 @@ export default function Hero({ homePage }: { homePage?: boolean }) {
                   <span>{t("address2")}</span>
                 </p>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>
