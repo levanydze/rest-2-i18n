@@ -1,7 +1,6 @@
 import MenuDetails from "./eachItemPage/MenuDetails";
 import { fetchMenuItem } from "../fetchingData";
 import { Metadata } from "next";
-import { useLocale } from "next-intl";
 
 type Props = {
   params: {
@@ -15,7 +14,6 @@ export const generateMetadata = async ({
 }: Props): Promise<Metadata> => {
   try {
     const data = await fetchMenuItem(params.itemId); // Use fetchMenuItem to fetch the data
-    const locale = useLocale();
 
     if (!data) {
       return {
@@ -24,8 +22,10 @@ export const generateMetadata = async ({
       };
     }
 
-    const itemName = data.names?.[locale];
-    const itemDescription = data.descriptions?.[locale];
+    // Use params.lang instead of `useLocale` hook
+    const itemName = data.names?.[params.lang] || data.names?.["en"];
+    const itemDescription =
+      data.descriptions?.[params.lang] || data.descriptions?.["en"];
 
     return {
       title: itemName,
