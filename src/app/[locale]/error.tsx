@@ -1,10 +1,11 @@
 "use client";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 // Static metadata
 export const generateMetadata = async () => {
-  const t = useTranslations("errorPage.metadata");
+  const t = await getTranslations("errorPage.metadata");
   return {
     title: t("title"),
     description: t("description"),
