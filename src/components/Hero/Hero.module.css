@@ -1,0 +1,38 @@
+.heroWrapper {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 1500px;
+  width: 100%;
+  overflow: hidden;
+}
+.noHomepage {
+  height: 70vh;
+}
+.heroWrapper img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+.overlay {
+  background-color: var(--overlay);
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.textWrapper {
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+}
+.textWrapper p {
+  margin-top: 30px;
+}

@@ -1,0 +1,81 @@
+/* Variables */
+:root {
+  --blue: #007bff;
+  --green: #28a745;
+  --red: #dc1c2f;
+  --yellow: #ffc107;
+
+  /* used for photo overlay to write text over */
+  --overlayLight: rgba(0, 0, 0, 0.218);
+  --overlay: rgba(0, 0, 0, 0.526);
+  --overlayDark: rgba(0, 0, 0, 0.768);
+
+  /* gray colors */
+  --white: rgb(255, 255, 255);
+  --gray3: rgb(200, 200, 200);
+  --gray5: rgb(150, 150, 150);
+  --gray7: rgb(90, 90, 90);
+  --gray9: rgb(40, 40, 40);
+  --black: #25313c;
+
+  /* project colors */
+  /* color1 = bright color */
+  /* color5 = dark color */
+  --color1: #fffee8;
+  --color2: #f3d4ad;
+  --color3: #6bd839;
+  --color4: #3f4c39;
+  --color4-10: rgba(63, 76, 57, 0.1); /*opacity 10*/
+  --color4-20: rgba(63, 76, 57, 0.2); /*opacity 10*/
+  --color4-40: rgba(63, 76, 57, 0.4); /*opacity 40*/
+  --color4-80: rgba(63, 76, 57, 0.8); /*opacity 80*/
+  --color5: #262626;
+}
+
+/* Classes */
+.white {
+  color: var(--white);
+}
+.gray3 {
+  color: var(--gray3);
+}
+.gray5 {
+  color: var(--gray5);
+}
+.gray7 {
+  color: var(--gray7);
+}
+
+.black {
+  color: var(--black);
+}
+.color1 {
+  color: var(--color1);
+}
+.color2 {
+  color: var(--color2);
+}
+.color3 {
+  color: var(--color3);
+}
+.color4 {
+  color: var(--color4);
+}
+.color5 {
+  color: var(--color5);
+}
+.bg-color1 {
+  background-color: var(--color1);
+}
+.bg-color2 {
+  background-color: var(--color2);
+}
+.bg-color3 {
+  background-color: var(--color3);
+}
+.bg-color4 {
+  background-color: var(--color4);
+}
+.bg-color5 {
+  background-color: var(--color5);
+}

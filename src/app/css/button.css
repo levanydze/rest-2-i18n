@@ -1,0 +1,48 @@
+.button {
+  border: 2px solid var(--color4);
+  background-color: var(--color4);
+  color: var(--white);
+  font-family: var(--font1);
+  width: max-content;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  justify-content: center;
+  padding: 10px 20px;
+  transition: all 0.2s;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* button1 START */
+.button:hover {
+  background-color: var(--color4);
+  color: var(--white);
+}
+
+.button-reverse {
+  color: var(--white);
+  background-color: var(--color4);
+}
+.button-reverse:hover {
+  background-color: var(--color1);
+}
+
+.button-bold {
+  font-weight: 700;
+}
+
+.buttonDisabled {
+  background-color: var(--gray3);
+  border: 2px solid var(--gray3);
+  color: var(--white);
+  cursor: default;
+}
+.buttonDisabled:hover {
+  background-color: var(--gray3);
+  border: 2px solid var(--gray3);
+}
+/* button1 END */

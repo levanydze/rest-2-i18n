@@ -1,0 +1,94 @@
+:root {
+  --section-padding-xl: 110px 80px;
+  --section-padding-lg: 70px 70px;
+  --section-padding-md: 60px 60px;
+  --section-padding-sm: 40px 40px;
+  --section-padding-xs: 30px 30px;
+
+  /* Breakpoints */
+  --break-xl: 1200px;
+  --break-lg: 992px;
+  --break-md: 768px;
+  --break-sm: 576px;
+  --break-xs: 400px;
+}
+
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+
+.section {
+  padding: var(--section-padding-xl);
+  width: 100%;
+  margin: 0 auto;
+}
+.section-light {
+  background-color: var(--color4-10);
+}
+.section-medium {
+  background-color: var(--color4-20);
+}
+
+.section-dark {
+  background-color: var(--color5);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Break point 1200px */
+@media (max-width: 1200px) {
+  .section {
+    padding: var(--section-padding-lg);
+  }
+}
+
+/* Break point 992px */
+@media (max-width: 992px) {
+  .section {
+    padding: var(--section-padding-md);
+  }
+}
+
+/* Break point 768px */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--section-padding-sm);
+  }
+}
+
+/* Break point 576px */
+@media (max-width: 576px) {
+  .section {
+    padding: var(--section-padding-xs);
+  }
+}
+
+/* Break point 400px */
+@media (max-width: 400px) {
+  .section {
+    padding: var(--section-padding-xxs);
+  }
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 0;
+}
+.hidden {
+  overflow: hidden;
+}
+.no-padding-y {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.no-padding-x {
+  padding-left: 0;
+  padding-right: 0;
+}

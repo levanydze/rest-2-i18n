@@ -1,0 +1,71 @@
+{
+  "homePage": {
+    "hero": {
+      "days": "Tue-Sun",
+      "hours": "8:00am - 9:00 pm",
+      "address1": "Rue Leschot 10, 1205",
+      "address2": "Genève, Switzerland"
+    },
+    "componentTwo": {
+      "title": "With Love",
+      "text": "With Lseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don't"
+    },
+    "componentThree": {
+      "title": "With Love"
+    },
+    "componentFour": {
+      "title": "With Love"
+    },
+    "componentFive": {
+      "title": "follow us on social media"
+    },
+    "componentSix": {
+      "title": "Without love",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone number",
+      "date": "Date",
+      "time": "Time",
+      "quantity": "Number of people",
+      "message": "Any special requirements?",
+      "send": "Send a Request",
+      "thankYou": "Thank you for your request",
+      "comfirmation": "Wait for our confirmation"
+    },
+    "testimonials": {
+      "title1": "What Our Customers Are Saying",
+      "title2": "blablabla"
+    }
+  },
+  "NotFoundPage": {
+    "title": "Page Not Found",
+    "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
+  },
+  "Navigation": {
+    "home": "Home"
+  },
+  "Footer": {
+    "copyright": "© 2024 Your App. All rights reserved."
+  },
+
+  "Metadata": {
+    "Main": {
+      "title": "english title ",
+      "description": "englishdescription "
+    }
+  },
+  "forms": {
+    "reservationForm": {
+      "name": "Enter your full name",
+      "email": "Email",
+      "phone": "Phone number",
+      "date": "Date",
+      "time": "Time",
+      "quantity": "Number of people",
+      "message": "Any special requirements?",
+      "send": "Send a Request",
+      "thankYou": "Thank you for your request",
+      "comfirmation": "Wait for our confirmation"
+    }
+  }
+}
