@@ -9,7 +9,7 @@ export default function Hero({ homePage }: { homePage?: boolean }) {
 
   return (
     <section
-      className={`${styles.heroWrapper} ${homePage ? styles.noHomepage : ""}`}
+      className={`${styles.heroWrapper} ${!homePage ? styles.noHomepage : ""}`}
     >
       <div className={styles.heroWrapper}>
         <Image
@@ -23,7 +23,7 @@ export default function Hero({ homePage }: { homePage?: boolean }) {
         <div className={styles.overlay}></div>
         <div className={`caption color1 ${styles.textWrapper}`}>
           <div className="section">
-            {!homePage && (
+            {homePage && (
               <div className="container">
                 <p>
                   <span>{t("days")}</span>

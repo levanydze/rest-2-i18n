@@ -31,7 +31,7 @@
   width: 100%;
   background-color: transparent;
   min-height: 60px;
-  background-color: var(--color4-80);
+  background-color: var(--color4-40);
 }
 .input::placeholder {
   color: white;

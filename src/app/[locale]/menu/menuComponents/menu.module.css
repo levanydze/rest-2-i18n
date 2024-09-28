@@ -5,17 +5,20 @@
   margin: 15px auto;
 } */
 
-.itemContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
-}
-
 .menuTitles {
   width: 100%;
   text-align: left;
   align-items: left;
   margin-top: 140px;
   margin-bottom: 60px;
+}
+.itemContainer {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Each card is 200px, but adjusts to fit available space */
+  gap: 20px; /* Spacing between cards */
+  padding: 20px; /* Padding around the container */
+  justify-items: center; /* Centers the cards within their grid cells */
 }
