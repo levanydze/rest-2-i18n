@@ -1,86 +1,111 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Titre en français",
-      "description": "Description en français"
+      "title": "Bienvenue dans notre Havre de Sushi",
+      "description": "Découvrez une expérience culinaire inoubliable, conçue avec amour et durabilité. Savourez les meilleurs sushis à Genève, Suisse."
     },
     "hero": {
       "days": "Mar-Dim",
-      "hours": "8h00 - 21h00",
+      "hours": "8:00am - 9:00pm",
       "address1": "Rue Leschot 10, 1205",
       "address2": "Genève, Suisse"
     },
     "componentTwo": {
-      "title": "Avec amour",
-      "text": "Il semble que vous soyez tombé sur une page qui n'existe pas. Ne vous inquiétez pas, notre magie d'internationalisation fonctionne encore dans d'autres parties de l'application."
-    },
-    "componentThree": {
-      "title": "Avec amour",
-      "text": "Il semble que vous soyez tombé sur une page qui n'existe pas. Ne vous inquiétez pas, notre magie d'internationalisation fonctionne encore dans d'autres parties de l'application."
-    },
-    "componentFour": {
-      "title": "Avec amour"
-    },
-    "componentFive": {
-      "title": "Suivez-nous sur les réseaux sociaux"
-    },
-    "componentSix": {
-      "title": "Sans amour",
-      "name": "Nom",
-      "email": "E-mail",
-      "phone": "Numéro de téléphone",
-      "date": "Date",
-      "time": "Heure",
-      "quantity": "Nombre de personnes",
-      "message": "Des exigences particulières?",
-      "send": "Envoyer une demande",
-      "thankYou": "Merci pour votre demande",
-      "comfirmation": "Attendez notre confirmation"
+      "title": "Avec Amour",
+      "text": "Nous sommes passionnés par l'idée d'offrir une expérience culinaire durable et inoubliable, en servant des plats issus de produits locaux qui reflètent l'essence de notre communauté."
     },
     "testimonials": {
-      "title1": "Ce que disent nos clients",
-      "title2": "bla bla bla"
+      "title1": "Quelques témoignages",
+      "title2": "de nos clients"
+    },
+    "componentThree": {
+      "title": "Notre Histoire",
+      "text": "D'une passion pour les sushis faits maison à un restaurant local adoré, nous sommes devenus une seconde maison pour les amateurs de sushis de la région."
+    },
+    "componentFour": {
+      "title": "Avec Amour"
+    },
+    "componentSix": {
+      "title": "Réserver une Table",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Numéro de Téléphone",
+      "date": "Date",
+      "time": "Heure",
+      "quantity": "Nombre de Convives",
+      "message": "Demandes spéciales ou restrictions alimentaires?",
+      "send": "Envoyer une Demande de Réservation",
+      "thankYou": "Merci pour votre réservation!",
+      "comfirmation": "Veuillez attendre la confirmation"
+    },
+    "componentFive": {
+      "title": "Rejoignez Notre Communauté"
     }
   },
   "menuPage": {
     "metadata": {
-      "title": "Titre en français",
-      "description": "Description en français"
+      "title": "Découvrez Notre Menu",
+      "description": "Parcourez notre menu et savourez nos meilleures créations de sushi, préparées avec des ingrédients frais et une touche locale."
     },
     "menu": {
       "underCategory": "menu"
     }
   },
+  "storyPage": {
+    "metadata": {
+      "title": "Notre Histoire",
+      "description": "Découvrez les racines de notre passion pour les sushis et comment nous sommes devenus un lieu de restauration adoré à Genève, alliant tradition et innovation."
+    },
+    "componentSeven": {
+      "title": "Une Expérience Unique",
+      "caption": "Patience",
+      "text": "Notre objectif est d'offrir une expérience culinaire durable et unique qui laisse une impression durable, en servant des plats issus de produits locaux."
+    },
+    "componentEight": {
+      "title": "25 Ans de Passion",
+      "text": "Depuis 25 ans, nous perfectionnons notre savoir-faire en offrant une expérience culinaire inoubliable aux amateurs de sushi et à la communauté locale."
+    }
+  },
+  "reservationPage": {
+    "metadata": {
+      "title": "Réserver une Table",
+      "description": "Réservez une table chez nous aujourd'hui pour découvrir les meilleurs sushis et une atmosphère culinaire inoubliable au cœur de Genève."
+    },
+    "componentNine": {
+      "title": "Réservez Votre Table",
+      "text": "Réservez votre place et savourez nos sushis durables préparés avec amour. Nous sommes impatients de vous accueillir!"
+    }
+  },
   "forms": {
     "reservationForm": {
-      "name": "Entrez votre nom complet",
-      "email": "E-mail",
-      "phone": "Numéro de téléphone",
+      "name": "Nom Complet",
+      "email": "Email",
+      "phone": "Numéro de Téléphone",
       "date": "Date",
       "time": "Heure",
-      "quantity": "Nombre de personnes",
-      "message": "Des exigences particulières?",
-      "send": "Envoyer une demande",
-      "thankYou": "Merci pour votre demande",
-      "comfirmation": "Attendez notre confirmation"
+      "quantity": "Nombre de Convives",
+      "message": "Demandes spéciales?",
+      "send": "Envoyer une Demande de Réservation",
+      "thankYou": "Merci pour votre réservation!",
+      "comfirmation": "Veuillez attendre la confirmation"
     }
   },
   "errorPage": {
     "metadata": {
-      "title": "Titre en français",
-      "description": "Description en français"
+      "title": "Erreur - Quelque Chose a Mal Tourné",
+      "description": "Il semble que quelque chose ait mal tourné. La page que vous recherchez n'existe pas ou a été déplacée. Revenons à la page d'accueil."
     },
-    "errorTitle": "Oups! Quelque chose s'est mal passé",
-    "errorDescription": "La page que vous recherchez n'existe pas ou a été déplacée. Essayez de revenir à la page d'accueil.",
-    "errorButton": "Retour à l'accueil"
+    "errorTitle": "Oups! Quelque chose a mal tourné",
+    "errorDescription": "La page que vous recherchez n'existe pas ou a été déplacée. Veuillez retourner à la page d'accueil pour continuer votre exploration.",
+    "errorButton": "Retour à la Page d'Accueil"
   },
   "notFoundPage": {
     "metadata": {
-      "title": "Page non trouvée",
-      "description": "Oups! Il semble que vous soyez tombé sur une page qui n'existe pas. Ne vous inquiétez pas, notre magie d'internationalisation fonctionne encore dans d'autres parties de l'application. N'hésitez pas à revenir en arrière pour explorer davantage!"
+      "title": "404 - Page Non Trouvée",
+      "description": "La page que vous recherchez n'a pas pu être trouvée. Retournez à notre page d'accueil pour découvrir les meilleurs sushis à Genève."
     },
-    "title": "Oups! Quelque chose s'est mal passé",
-    "description": "La page que vous recherchez n'existe pas ou a été déplacée. Essayez de revenir à la page d'accueil.",
-    "button": "Retour à l'accueil"
+    "title": "Page Non Trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée. Revenons à la page d'accueil.",
+    "button": "Retour à la Page d'Accueil"
   }
 }

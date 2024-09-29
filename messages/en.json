@@ -1,51 +1,51 @@
 {
   "homePage": {
     "metadata": {
-      "title": "english title ",
-      "description": "englishdescription "
+      "title": "Welcome to Our Sushi Haven",
+      "description": "Discover an unforgettable dining experience, crafted with love and sustainability in mind. Enjoy the finest sushi in Genève, Switzerland."
     },
     "hero": {
       "days": "Tue-Sun",
-      "hours": "8:00am - 9:00 pm",
+      "hours": "8:00am - 9:00pm",
       "address1": "Rue Leschot 10, 1205",
       "address2": "Genève, Switzerland"
     },
     "componentTwo": {
       "title": "With Love",
-      "text": "With Lseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don't"
+      "text": "We are passionate about providing a sustainable and unforgettable dining experience, serving locally sourced dishes that reflect the essence of our community."
+    },
+    "testimonials": {
+      "title1": "Some love",
+      "title2": "from our customers"
     },
     "componentThree": {
-      "title": "With Love",
-      "text": "With Lseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don'tseems like you've stumbled upon a page that doesn't exist. Don't"
+      "title": "Our Journey",
+      "text": "From a passion for homemade sushi to a beloved local eatery, we’ve become a second home for sushi enthusiasts across the region."
     },
     "componentFour": {
       "title": "With Love"
     },
-    "componentFive": {
-      "title": "follow us on social media"
-    },
     "componentSix": {
-      "title": "Without love",
+      "title": "Reserve a Table",
       "name": "Name",
       "email": "Email",
-      "phone": "Phone number",
+      "phone": "Phone Number",
       "date": "Date",
       "time": "Time",
-      "quantity": "Number of people",
-      "message": "Any special requirements?",
-      "send": "Send a Request",
-      "thankYou": "Thank you for your request",
-      "comfirmation": "Wait for our confirmation"
+      "quantity": "Number of Guests",
+      "message": "Special requests or dietary restrictions?",
+      "send": "Send Reservation Request",
+      "thankYou": "Thank you for your reservation!",
+      "comfirmation": "Please wait for confirmation"
     },
-    "testimonials": {
-      "title1": "Little love form",
-      "title2": "our customers"
+    "componentFive": {
+      "title": "Join Our Community"
     }
   },
   "menuPage": {
     "metadata": {
-      "title": "english title ",
-      "description": "englishdescription "
+      "title": "Explore Our Menu",
+      "description": "Browse our menu and savor the best of our sushi creations, crafted with fresh ingredients and a touch of local love."
     },
     "menu": {
       "underCategory": "menu"
@@ -53,61 +53,59 @@
   },
   "storyPage": {
     "metadata": {
-      "title": "english title ",
-      "description": "englishdescription "
+      "title": "Our Story",
+      "description": "Learn about the roots of our sushi passion and how we’ve grown into a beloved dining spot in Genève, bringing together tradition and innovation."
     },
     "componentSeven": {
       "title": "Experience",
-      "caption": "Pation",
-      "text": "We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community. We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community."
+      "caption": "Patient",
+      "text": "Our goal is to offer a one-of-a-kind, sustainable dining experience that leaves a lasting impression, serving dishes crafted from locally sourced ingredients."
     },
     "componentEight": {
-      "title": "25 years",
-      "text": "We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community."
+      "title": "25 Years",
+      "text": "For 25 years, we’ve been perfecting our craft, offering a memorable dining experience for sushi lovers and the local community."
     }
   },
-
   "reservationPage": {
     "metadata": {
-      "title": "english title ",
-      "description": "englishdescription "
+      "title": "Reserve a Table",
+      "description": "Book a table with us today to experience the finest sushi and an unforgettable dining atmosphere in the heart of Genève."
     },
     "componentNine": {
-      "title": "Reserv a Table",
-      "text": "We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community. We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community."
+      "title": "Reserve Your Table",
+      "text": "Secure your spot and enjoy our sustainable sushi crafted with love. We can't wait to welcome you!"
     }
   },
   "forms": {
     "reservationForm": {
-      "name": "Enter your full name",
+      "name": "Full Name",
       "email": "Email",
-      "phone": "Phone number",
+      "phone": "Phone Number",
       "date": "Date",
       "time": "Time",
-      "quantity": "Number of people",
-      "message": "Any special requirements?",
-      "send": "Send a Request",
-      "thankYou": "Thank you for your request",
+      "quantity": "Number of Guests",
+      "message": "Any special requests?",
+      "send": "Send Reservation Request",
+      "thankYou": "Thank you for your reservation!",
       "comfirmation": "Wait for our confirmation"
     }
   },
   "errorPage": {
     "metadata": {
-      "title": "english title ",
-      "description": "englishdescription "
+      "title": "Error - Something Went Wrong",
+      "description": "It seems like something went wrong. The page you’re looking for doesn’t exist or has been moved. Let’s get you back to the homepage."
     },
     "errorTitle": "Oops! Something went wrong",
-    "errorDescription": "  The page you're looking for doesn't exist or has been moved. Trygoing back to the homepage.",
-    "errorButton": "Back To Home"
+    "errorDescription": "The page you’re looking for doesn’t exist or has been moved. Please return to the homepage and continue exploring.",
+    "errorButton": "Back to Homepage"
   },
-
   "notFoundPage": {
     "metadata": {
-      "title": "Page Not Found",
-      "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
+      "title": "404 - Page Not Found",
+      "description": "The page you’re looking for could not be found. Return to our homepage to discover the best sushi in Genève."
     },
-    "title": "Oops! Something went wrong",
-    "description": "  The page you're looking for doesn't exist or has been moved. Trygoing back to the homepage.",
-    "button": "Back To Home"
+    "title": "Page Not Found",
+    "description": "The page you’re looking for doesn’t exist or has been moved. Let's get you back to the homepage.",
+    "button": "Back to Homepage"
   }
 }

@@ -1,86 +1,111 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Titolo in italiano",
-      "description": "Descrizione in italiano"
+      "title": "Benvenuti nel Nostro Rifugio di Sushi",
+      "description": "Scoprite un'esperienza culinaria indimenticabile, creata con amore e sostenibilità. Gustate il miglior sushi a Ginevra, Svizzera."
     },
     "hero": {
       "days": "Mar-Dom",
-      "hours": "8:00 - 21:00",
+      "hours": "8:00am - 9:00pm",
       "address1": "Rue Leschot 10, 1205",
       "address2": "Ginevra, Svizzera"
     },
     "componentTwo": {
-      "title": "Con amore",
-      "text": "Sembra che tu abbia trovato una pagina che non esiste. Non preoccuparti, la nostra magia di internazionalizzazione sta ancora funzionando in altre parti dell'app."
-    },
-    "componentThree": {
-      "title": "Con amore",
-      "text": "Sembra che tu abbia trovato una pagina che non esiste. Non preoccuparti, la nostra magia di internazionalizzazione sta ancora funzionando in altre parti dell'app."
-    },
-    "componentFour": {
-      "title": "Con amore"
-    },
-    "componentFive": {
-      "title": "Seguici sui social media"
-    },
-    "componentSix": {
-      "title": "Senza amore",
-      "name": "Nome",
-      "email": "E-mail",
-      "phone": "Numero di telefono",
-      "date": "Data",
-      "time": "Orario",
-      "quantity": "Numero di persone",
-      "message": "Richieste particolari?",
-      "send": "Invia una richiesta",
-      "thankYou": "Grazie per la tua richiesta",
-      "comfirmation": "Attendi la nostra conferma"
+      "title": "Con Amore",
+      "text": "Siamo appassionati di offrire un'esperienza culinaria sostenibile e indimenticabile, servendo piatti locali che riflettono l'essenza della nostra comunità."
     },
     "testimonials": {
-      "title1": "Cosa dicono i nostri clienti",
-      "title2": "bla bla bla"
+      "title1": "Un po' d'amore",
+      "title2": "dai nostri clienti"
+    },
+    "componentThree": {
+      "title": "Il Nostro Viaggio",
+      "text": "Dalla passione per il sushi fatto in casa a un locale amato, siamo diventati una seconda casa per gli appassionati di sushi della regione."
+    },
+    "componentFour": {
+      "title": "Con Amore"
+    },
+    "componentSix": {
+      "title": "Prenota un Tavolo",
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Numero di Telefono",
+      "date": "Data",
+      "time": "Ora",
+      "quantity": "Numero di Ospiti",
+      "message": "Richieste speciali o restrizioni alimentari?",
+      "send": "Invia Richiesta di Prenotazione",
+      "thankYou": "Grazie per la tua prenotazione!",
+      "comfirmation": "Attendi la conferma"
+    },
+    "componentFive": {
+      "title": "Unisciti alla Nostra Comunità"
     }
   },
   "menuPage": {
     "metadata": {
-      "title": "Titolo in italiano",
-      "description": "Descrizione in italiano"
+      "title": "Esplora il Nostro Menu",
+      "description": "Esplora il nostro menu e assapora le nostre migliori creazioni di sushi, preparate con ingredienti freschi e un tocco locale."
     },
     "menu": {
       "underCategory": "menu"
     }
   },
+  "storyPage": {
+    "metadata": {
+      "title": "La Nostra Storia",
+      "description": "Scopri le radici della nostra passione per il sushi e come siamo diventati un locale amato a Ginevra, unendo tradizione e innovazione."
+    },
+    "componentSeven": {
+      "title": "Un'Esperienza Unica",
+      "caption": "Pazienza",
+      "text": "Il nostro obiettivo è offrire un'esperienza culinaria sostenibile e unica che lasci un'impressione duratura, servendo piatti preparati con ingredienti locali."
+    },
+    "componentEight": {
+      "title": "25 Anni di Passione",
+      "text": "Da 25 anni perfezioniamo il nostro mestiere, offrendo un'esperienza culinaria memorabile per gli amanti del sushi e la comunità locale."
+    }
+  },
+  "reservationPage": {
+    "metadata": {
+      "title": "Prenota un Tavolo",
+      "description": "Prenota un tavolo da noi oggi per vivere il miglior sushi e un'atmosfera culinaria indimenticabile nel cuore di Ginevra."
+    },
+    "componentNine": {
+      "title": "Prenota il Tuo Tavolo",
+      "text": "Prenota il tuo posto e goditi il nostro sushi sostenibile preparato con amore. Non vediamo l'ora di darti il benvenuto!"
+    }
+  },
   "forms": {
     "reservationForm": {
-      "name": "Inserisci il tuo nome completo",
-      "email": "E-mail",
-      "phone": "Numero di telefono",
+      "name": "Nome Completo",
+      "email": "Email",
+      "phone": "Numero di Telefono",
       "date": "Data",
-      "time": "Orario",
-      "quantity": "Numero di persone",
-      "message": "Richieste particolari?",
-      "send": "Invia una richiesta",
-      "thankYou": "Grazie per la tua richiesta",
-      "comfirmation": "Attendi la nostra conferma"
+      "time": "Ora",
+      "quantity": "Numero di Ospiti",
+      "message": "Richieste speciali?",
+      "send": "Invia Richiesta di Prenotazione",
+      "thankYou": "Grazie per la tua prenotazione!",
+      "comfirmation": "Attendi la conferma"
     }
   },
   "errorPage": {
     "metadata": {
-      "title": "Titolo in italiano",
-      "description": "Descrizione in italiano"
+      "title": "Errore - Qualcosa è Andato Storto",
+      "description": "Sembra che qualcosa sia andato storto. La pagina che stai cercando non esiste o è stata spostata. Torniamo alla homepage."
     },
-    "errorTitle": "Oops! Qualcosa è andato storto",
-    "errorDescription": "La pagina che stai cercando non esiste o è stata spostata. Prova a tornare alla pagina principale.",
-    "errorButton": "Torna alla home"
+    "errorTitle": "Ops! Qualcosa è andato storto",
+    "errorDescription": "La pagina che stai cercando non esiste o è stata spostata. Torna alla homepage per continuare l'esplorazione.",
+    "errorButton": "Torna alla Homepage"
   },
   "notFoundPage": {
     "metadata": {
-      "title": "Pagina non trovata",
-      "description": "Oops! Sembra che tu abbia trovato una pagina che non esiste. Non preoccuparti, la nostra magia di internazionalizzazione sta ancora funzionando in altre parti dell'app. Sentiti libero di tornare indietro per esplorare di più!"
+      "title": "404 - Pagina Non Trovata",
+      "description": "La pagina che stai cercando non è stata trovata. Torna alla nostra homepage per scoprire il miglior sushi a Ginevra."
     },
-    "title": "Oops! Qualcosa è andato storto",
-    "description": "La pagina che stai cercando non esiste o è stata spostata. Prova a tornare alla pagina principale.",
-    "button": "Torna alla home"
+    "title": "Pagina Non Trovata",
+    "description": "La pagina che stai cercando non esiste o è stata spostata. Torniamo alla homepage.",
+    "button": "Torna alla Homepage"
   }
 }

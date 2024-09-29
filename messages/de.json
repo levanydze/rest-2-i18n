@@ -1,86 +1,111 @@
 {
   "homePage": {
     "metadata": {
-      "title": "Deutscher Titel",
-      "description": "Deutsche Beschreibung"
+      "title": "Willkommen in Unserem Sushi-Paradies",
+      "description": "Entdecken Sie ein unvergessliches kulinarisches Erlebnis, das mit Liebe und Nachhaltigkeit gestaltet wurde. Genießen Sie das beste Sushi in Genf, Schweiz."
     },
     "hero": {
       "days": "Di-So",
-      "hours": "8:00 Uhr - 21:00 Uhr",
+      "hours": "8:00am - 9:00pm",
       "address1": "Rue Leschot 10, 1205",
       "address2": "Genf, Schweiz"
     },
     "componentTwo": {
       "title": "Mit Liebe",
-      "text": "Es scheint, als ob Sie auf eine Seite gestoßen sind, die nicht existiert. Keine Sorge, unsere Magie der Internationalisierung funktioniert noch in anderen Teilen der App."
+      "text": "Wir sind leidenschaftlich darum bemüht, ein nachhaltiges und unvergessliches kulinarisches Erlebnis zu bieten, mit Gerichten aus regionalen Zutaten, die das Wesen unserer Gemeinschaft widerspiegeln."
+    },
+    "testimonials": {
+      "title1": "Etwas Liebe",
+      "title2": "von unseren Kunden"
     },
     "componentThree": {
-      "title": "Mit Liebe",
-      "text": "Es scheint, als ob Sie auf eine Seite gestoßen sind, die nicht existiert. Keine Sorge, unsere Magie der Internationalisierung funktioniert noch in anderen Teilen der App."
+      "title": "Unsere Reise",
+      "text": "Von einer Leidenschaft für hausgemachtes Sushi bis hin zu einem geliebten Lokal, sind wir ein zweites Zuhause für Sushi-Enthusiasten in der Region geworden."
     },
     "componentFour": {
       "title": "Mit Liebe"
     },
-    "componentFive": {
-      "title": "Folgen Sie uns auf Social Media"
-    },
     "componentSix": {
-      "title": "Ohne Liebe",
+      "title": "Tisch Reservieren",
       "name": "Name",
       "email": "E-Mail",
       "phone": "Telefonnummer",
       "date": "Datum",
       "time": "Zeit",
-      "quantity": "Anzahl der Personen",
-      "message": "Besondere Anforderungen?",
-      "send": "Anfrage senden",
-      "thankYou": "Vielen Dank für Ihre Anfrage",
-      "comfirmation": "Warten Sie auf unsere Bestätigung"
+      "quantity": "Anzahl der Gäste",
+      "message": "Spezielle Wünsche oder diätetische Einschränkungen?",
+      "send": "Reservierungsanfrage Senden",
+      "thankYou": "Vielen Dank für Ihre Reservierung!",
+      "comfirmation": "Bitte warten Sie auf die Bestätigung"
     },
-    "testimonials": {
-      "title1": "Was unsere Kunden sagen",
-      "title2": "bla bla bla"
+    "componentFive": {
+      "title": "Treten Sie Unserer Gemeinschaft Bei"
     }
   },
   "menuPage": {
     "metadata": {
-      "title": "Deutscher Titel",
-      "description": "Deutsche Beschreibung"
+      "title": "Entdecken Sie Unser Menü",
+      "description": "Blättern Sie durch unser Menü und genießen Sie unsere besten Sushi-Kreationen, die mit frischen Zutaten und einem lokalen Touch zubereitet werden."
     },
     "menu": {
-      "underCategory": "Menü"
+      "underCategory": "menu"
+    }
+  },
+  "storyPage": {
+    "metadata": {
+      "title": "Unsere Geschichte",
+      "description": "Erfahren Sie mehr über die Wurzeln unserer Sushi-Leidenschaft und wie wir zu einem beliebten Restaurant in Genf geworden sind, das Tradition und Innovation vereint."
+    },
+    "componentSeven": {
+      "title": "Ein Einzigartiges Erlebnis",
+      "caption": "Geduld",
+      "text": "Unser Ziel ist es, ein einzigartiges, nachhaltiges kulinarisches Erlebnis zu bieten, das einen bleibenden Eindruck hinterlässt. Wir servieren Gerichte, die mit regionalen Zutaten zubereitet werden."
+    },
+    "componentEight": {
+      "title": "25 Jahre Leidenschaft",
+      "text": "Seit 25 Jahren perfektionieren wir unser Handwerk und bieten Sushi-Liebhabern und der lokalen Gemeinschaft ein unvergessliches kulinarisches Erlebnis."
+    }
+  },
+  "reservationPage": {
+    "metadata": {
+      "title": "Tisch Reservieren",
+      "description": "Reservieren Sie noch heute einen Tisch bei uns, um das beste Sushi und eine unvergessliche kulinarische Atmosphäre im Herzen von Genf zu erleben."
+    },
+    "componentNine": {
+      "title": "Reservieren Sie Ihren Tisch",
+      "text": "Sichern Sie sich Ihren Platz und genießen Sie unser nachhaltiges Sushi, das mit Liebe zubereitet wird. Wir freuen uns darauf, Sie zu begrüßen!"
     }
   },
   "forms": {
     "reservationForm": {
-      "name": "Geben Sie Ihren vollständigen Namen ein",
+      "name": "Vollständiger Name",
       "email": "E-Mail",
       "phone": "Telefonnummer",
       "date": "Datum",
       "time": "Zeit",
-      "quantity": "Anzahl der Personen",
-      "message": "Besondere Anforderungen?",
-      "send": "Anfrage senden",
-      "thankYou": "Vielen Dank für Ihre Anfrage",
-      "comfirmation": "Warten Sie auf unsere Bestätigung"
+      "quantity": "Anzahl der Gäste",
+      "message": "Besondere Wünsche?",
+      "send": "Reservierungsanfrage Senden",
+      "thankYou": "Vielen Dank für Ihre Reservierung!",
+      "comfirmation": "Bitte warten Sie auf die Bestätigung"
     }
   },
   "errorPage": {
     "metadata": {
-      "title": "Deutscher Titel",
-      "description": "Deutsche Beschreibung"
+      "title": "Fehler - Etwas Ist Schiefgelaufen",
+      "description": "Es scheint, dass etwas schiefgelaufen ist. Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Kehren wir zur Startseite zurück."
     },
-    "errorTitle": "Hoppla! Etwas ist schief gelaufen",
-    "errorDescription": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Versuchen Sie, zur Startseite zurückzukehren.",
+    "errorTitle": "Ups! Etwas ist schiefgelaufen",
+    "errorDescription": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Bitte kehren Sie zur Startseite zurück und setzen Sie Ihre Erkundung fort.",
     "errorButton": "Zurück zur Startseite"
   },
   "notFoundPage": {
     "metadata": {
-      "title": "Seite nicht gefunden",
-      "description": "Hoppla! Es scheint, dass Sie auf eine Seite gestoßen sind, die nicht existiert. Keine Sorge, unsere Internationalisierungs-Magie funktioniert noch in anderen Teilen der App. Fühlen Sie sich frei, zurück zu navigieren, um mehr zu entdecken!"
+      "title": "404 - Seite Nicht Gefunden",
+      "description": "Die Seite, die Sie suchen, konnte nicht gefunden werden. Kehren Sie zu unserer Startseite zurück, um das beste Sushi in Genf zu entdecken."
     },
-    "title": "Hoppla! Etwas ist schief gelaufen",
-    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Versuchen Sie, zur Startseite zurückzukehren.",
+    "title": "Seite Nicht Gefunden",
+    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Kehren wir zur Startseite zurück.",
     "button": "Zurück zur Startseite"
   }
 }
