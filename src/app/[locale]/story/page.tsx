@@ -1,7 +1,8 @@
+import { chefImage, heroStory, chroisant2 } from "@/public/image";
 import Hero from "@/src/components/Hero/Hero";
-import ComponentThree from "@/src/components/Home/componentThree/ComponentThree";
-import ComponentEight from "@/src/components/Story/ComponentEight/ComponentEight";
-import ComponentSeven from "@/src/components/Story/ComponentSeven/ComponentSeven";
+import ComponentThree from "@/src/components/componentThree/ComponentThree";
+import ComponentEight from "@/src/components/ComponentEight/ComponentEight";
+import ComponentSeven from "@/src/components/ComponentSeven/ComponentSeven";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { getTranslations } from "next-intl/server";
 
@@ -18,14 +19,14 @@ export default async function StoryPage() {
   const t = await getTranslations("");
   return (
     <div className="fadeOut">
-      <Hero homePage={false} />
-      <ComponentSeven />
-      <ComponentEight />
+      <Hero homePage={false} image={heroStory} />
+      <ComponentSeven image={chefImage} />
+      <ComponentEight image={chroisant2} />
       <Testimonials
         title1={t("homePage.testimonials.title1")}
-        title2={t("homePage.testimonials.title1")}
+        title2={t("homePage.testimonials.title2")}
       />
-      <ComponentThree />
+      <ComponentThree image={heroStory} />
     </div>
   );
 }

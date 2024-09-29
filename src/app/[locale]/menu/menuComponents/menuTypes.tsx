@@ -9,6 +9,7 @@ export interface MenuItemProps {
   option1?: boolean; // Vegan option
   option2?: boolean; // New item option
   option3?: boolean; // Favorite item option
+  priority: number;
 }
 
 export interface CategoryProps {

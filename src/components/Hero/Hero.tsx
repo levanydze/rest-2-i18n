@@ -1,10 +1,17 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
 import { companyName } from "@/Manager/info";
-import heroImage from "@//public/images/homePage/hero.jpg";
 import { useTranslations } from "next-intl";
+import { StaticImageData } from "next/image";
+import { logo } from "@/public/image";
 
-export default function Hero({ homePage }: { homePage?: boolean }) {
+export default function Hero({
+  homePage,
+  image,
+}: {
+  homePage: boolean;
+  image: StaticImageData;
+}) {
   const t = useTranslations("homePage.hero");
 
   return (
@@ -14,7 +21,7 @@ export default function Hero({ homePage }: { homePage?: boolean }) {
       <div className={styles.heroWrapper}>
         <Image
           className={styles.heroImage}
-          src={heroImage}
+          src={image}
           height={1500}
           width={3500}
           alt={`restraurant hero image ${companyName}`}
@@ -22,21 +29,29 @@ export default function Hero({ homePage }: { homePage?: boolean }) {
         />
         <div className={styles.overlay}></div>
         <div className={`caption color1 ${styles.textWrapper}`}>
-          <div className="section">
-            {homePage && (
-              <div className="container">
-                <p>
-                  <span>{t("days")}</span>
-                  <br />
-                  <span>{t("hours")}</span>
-                </p>
-                <p>
-                  <span>{t("address1")}</span>
-                  <br />
-                  <span>{t("address2")}</span>
-                </p>
-              </div>
-            )}
+          <div className={`section container`}>
+            <div className={styles.innerWrapper}>
+              <Image
+                src={logo}
+                alt={`${companyName} logo`}
+                width={50}
+                height={30}
+              />
+              {homePage && (
+                <div className={styles.lowerDiv}>
+                  <p>
+                    <span>{t("days")}</span>
+                    <br />
+                    <span>{t("hours")}</span>
+                  </p>
+                  <p>
+                    <span>{t("address1")}</span>
+                    <br />
+                    <span>{t("address2")}</span>
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

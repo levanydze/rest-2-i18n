@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./ComponentThree.module.css";
-import image from "@/public/images/homePage/ComponentThree.jpg";
+
 import { useTranslations } from "next-intl";
 
-export default function ComponentThree() {
+export default function ComponentThree({ image }: { image: StaticImageData }) {
   const t = useTranslations("homePage.componentThree");
 
   return (
@@ -20,7 +20,7 @@ export default function ComponentThree() {
           </div>
           <div className={styles.textWrapper}>
             <h2 className="heading2 color2">{t("title")}</h2>
-            <p className="paragraph white">{t("text")}</p>
+            <p className="paragraph gray3">{t("text")}</p>
           </div>
         </div>
       </div>

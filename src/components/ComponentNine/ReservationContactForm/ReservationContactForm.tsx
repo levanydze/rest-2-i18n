@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { sendEmail } from "./contactFunctional"; // Import email logic
 import styles from "./ReservationContactForm.module.css";
-import { ReservationFormProps } from "../../../types";
+import { ReservationFormProps } from "../../typesComponents";
 
 export default function ReservationContactForm({
   name,
@@ -112,10 +112,12 @@ export default function ReservationContactForm({
             {send}
           </button>
         </form>
-        <div className={emailSent ? styles.formSent : styles.hide}>
-          <h6 className="heading3 color4">{thankYou}</h6>
-          <h5 className="heading4">{comfirmation}</h5>
-        </div>
+        {emailSent && (
+          <div className={styles.formSent}>
+            <h6 className="heading3 color4">{thankYou}</h6>
+            <h5 className="heading4">{comfirmation}</h5>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,10 +1,4 @@
 {
-  "navigation": {
-    "home": "Home",
-    "menu": "Menu",
-    "story": "Our Story",
-    "reservation": "Reservation"
-  },
   "homePage": {
     "metadata": {
       "title": "english title ",
@@ -44,8 +38,8 @@
       "comfirmation": "Wait for our confirmation"
     },
     "testimonials": {
-      "title1": "What Our Customers Are Saying",
-      "title2": "blablabla"
+      "title1": "Little love form",
+      "title2": "our customers"
     }
   },
   "menuPage": {
@@ -55,6 +49,32 @@
     },
     "menu": {
       "underCategory": "menu"
+    }
+  },
+  "storyPage": {
+    "metadata": {
+      "title": "english title ",
+      "description": "englishdescription "
+    },
+    "componentSeven": {
+      "title": "Experience",
+      "caption": "Pation",
+      "text": "We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community. We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community."
+    },
+    "componentEight": {
+      "title": "25 years",
+      "text": "We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community."
+    }
+  },
+
+  "reservationPage": {
+    "metadata": {
+      "title": "english title ",
+      "description": "englishdescription "
+    },
+    "componentNine": {
+      "title": "Reserv a Table",
+      "text": "We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community. We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community."
     }
   },
   "forms": {

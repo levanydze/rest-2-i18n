@@ -1,6 +1,6 @@
-.menuWrapper {
+.container {
+  margin-top: -150px;
 }
-
 /* .menuWrapper p {
   margin: 15px auto;
 } */
@@ -8,14 +8,13 @@
 .menuTitles {
   width: 100%;
   text-align: left;
-  align-items: left;
   margin-top: 140px;
   margin-bottom: 60px;
 }
+
 .itemContainer {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
-  gap: 20px; /* Adds spacing between the cards */
-  justify-content: center; /* Centers the cards horizontally */
-  padding: 20px; /* Adds padding around the container */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }

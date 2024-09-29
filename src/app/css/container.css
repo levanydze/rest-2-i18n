@@ -4,6 +4,7 @@
   --section-padding-md: 60px 60px;
   --section-padding-sm: 40px 40px;
   --section-padding-xs: 30px 30px;
+  --section-padding-xxs: 20px 20px;
 
   /* Breakpoints */
   --break-xl: 1200px;
@@ -11,6 +12,7 @@
   --break-md: 768px;
   --break-sm: 576px;
   --break-xs: 400px;
+  --break-xxs: 300px;
 }
 
 .absolute {
@@ -46,32 +48,37 @@
 /* Break point 1200px */
 @media (max-width: 1200px) {
   .section {
-    padding: var(--section-padding-lg);
+    padding: var(--section-padding-xl);
   }
 }
 
 /* Break point 992px */
 @media (max-width: 992px) {
   .section {
-    padding: var(--section-padding-md);
+    padding: var(--section-padding-lg);
   }
 }
 
 /* Break point 768px */
 @media (max-width: 768px) {
   .section {
-    padding: var(--section-padding-sm);
+    padding: var(--section-padding-md);
   }
 }
 
 /* Break point 576px */
 @media (max-width: 576px) {
   .section {
-    padding: var(--section-padding-xs);
+    padding: var(--section-padding-sm);
   }
 }
 
 /* Break point 400px */
+@media (max-width: 400px) {
+  .section {
+    padding: var(--section-padding-xs);
+  }
+}
 @media (max-width: 400px) {
   .section {
     padding: var(--section-padding-xxs);

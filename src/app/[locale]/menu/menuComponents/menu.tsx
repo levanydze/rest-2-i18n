@@ -21,17 +21,25 @@ export default async function Menu() {
       </div>
     );
   }
+
+  // Sort categories based on priority
   const sortedCategories = categories.sort((a, b) => a.priority - b.priority);
+
   return (
     <div className={styles.cardWrapper}>
       <section className="section section-medium">
-        <div className="container">
+        <div className={` container ${styles.container}`}>
           {sortedCategories.map((category) => {
             // Access category translations for the current locale, fallback to 'en'
             const categoryName =
               category.translations?.[locale] ||
               category.translations?.[defaultLocale] ||
               "Unnamed Category";
+
+            // Sort items by their priority before rendering them
+            const sortedItems = Object.values(category.items).sort(
+              (a: MenuItemProps, b: MenuItemProps) => a.priority - b.priority
+            );
 
             return (
               <div key={category.id} className={styles.menuWrapper}>
@@ -40,9 +48,9 @@ export default async function Menu() {
                   <span className="heading3 white">{t("underCategory")}</span>
                 </div>
                 <div className={styles.itemContainer}>
-                  {Object.values(category.items).map((item: MenuItemProps) => (
+                  {sortedItems.map((item: MenuItemProps) => (
                     <ServerCard
-                      key="{item.id}"
+                      key={item.id} // Remove the curly braces here, it's an actual value
                       id={item.id}
                       image={item.image}
                       names={item.names}
@@ -51,6 +59,7 @@ export default async function Menu() {
                       option1={item.option1 || false}
                       option2={item.option2 || false}
                       option3={item.option3 || false}
+                      priority={item.priority}
                     />
                   ))}
                 </div>

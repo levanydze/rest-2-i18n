@@ -33,6 +33,15 @@
   justify-content: flex-end;
   height: 100%;
 }
+.textWrapper img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  top: 10%;
+  left: 20%;
+  z-index: 2;
+}
+
 .textWrapper p {
   margin-top: 30px;
 }

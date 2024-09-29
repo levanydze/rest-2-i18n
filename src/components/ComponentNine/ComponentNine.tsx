@@ -1,16 +1,15 @@
 import Image from "next/image";
 import styles from "./ComponentNine.module.css";
-import svg from "@/public/assets/svg/56degree cut.svg";
 import { useTranslations } from "next-intl";
-import ReservationContactForm from "@/src/components/Reservation/ComponentNine/ReservationContactForm/ReservationContactForm";
+import ReservationContactForm from "@/src/components/ComponentNine/ReservationContactForm/ReservationContactForm";
 
 export default function ComponentNine() {
   const t = useTranslations("");
   return (
-    <section className="section section-medium ">
-      <div className={styles.svgWrapper}>
-        <Image className={styles.svg} src={svg} alt="background SVG" />
-        <div className="container hidden">
+    <section className={` section noPadding-x section-medium  `}>
+      <div className="relative">
+        <div className={styles.background}></div>
+        <div className="container">
           <div className={styles.wrapper}>
             <div className={styles.textWrapper}>
               <div className={styles.titlesWrapper}>
@@ -19,7 +18,7 @@ export default function ComponentNine() {
                 </h2>
               </div>
               <div className={styles.lowerTextWrap}>
-                <p className="paragraph color2">
+                <p className="paragraph gray3">
                   {t("reservationPage.componentNine.text")}
                 </p>
               </div>

@@ -1,7 +1,6 @@
 import styles from "./Footer.module.css";
 import { navItems } from "@/Manager/navigation";
 import { NavItemProps } from "@/Manager/navigation";
-import logo from "@/public/images/logo.png";
 import Link from "next/link";
 import {
   email,
@@ -13,6 +12,7 @@ import {
 } from "@/Manager/info";
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import { logoDark } from "@/public/image";
 
 export default function Footer() {
   // Get the navigation items for the current language, default to English
@@ -28,7 +28,7 @@ export default function Footer() {
     <footer className="section section-light">
       <div className="container">
         <div className={styles.logoDiv}>
-          <Image src={logo} alt={companyName} width={200} height={80} />
+          <Image src={logoDark} alt={companyName} width={200} height={80} />
         </div>
         <div className={`heading4 color4 ${styles.middleDiv}`}>
           {/* Navigation */}

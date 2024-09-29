@@ -20,13 +20,13 @@ export default function Header() {
         <div className="container">
           <div className={styles.navigationWrapper}>
             <Link href={`/`} onClick={navClose} className={styles.logoWrapper}>
-              <Image
+              {/* <Image
                 className="logo"
                 src={Logo}
                 height={200}
                 width={200}
                 alt={`${companyName} logo`}
-              />
+              /> */}
             </Link>
             <StandartNav />
             <LanguageSwitcher />

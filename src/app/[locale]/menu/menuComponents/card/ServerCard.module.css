@@ -29,6 +29,16 @@
 
 .cardInfoDiv h2 {
   text-transform: uppercase;
+  max-height: 50px;
+  overflow: hidden;
+}
+.cardInfoDiv h3 {
+  line-height: 20px;
+  font-size: 14px;
+  max-height: 50px;
+  overflow: hidden;
+  margin-top: 10px;
+  color: var(--gray3);
 }
 
 .tagsPriceWrap {
@@ -41,41 +51,32 @@
 
 .details {
   display: flex;
-  gap: 8px;
-}
-.details div {
-  width: 44px;
-  height: 52px;
-  border-radius: 9px;
-  font-size: 30px;
-
-  opacity: 0.8;
-  border-radius: 9px;
-  position: relative;
+  justify-content: space-between; /* Spread the items horizontally */
+  align-items: flex-end; /* Align the items at the bottom of their container */
+  gap: 10px;
 }
 
 .eachItem {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  opacity: 80%;
+  display: flex;
+  align-items: flex-end; /* Align the content inside each item at the bottom */
+  justify-content: center; /* Center the content horizontally */
+  height: 100%; /* Ensure the container takes full height */
+}
+.details img,
+.details svg,
+.details path {
+  width: 30px;
+}
+.new img {
 }
 
-.new {
-  font-family: var(--font1);
-  font-weight: 900;
-  background: #007aff;
-  color: white;
-}
 .heart {
-  color: white;
+  color: rgb(255, 27, 27);
 
-  color: rgba(255, 0, 0, 0.815);
-  background-color: var(--color2);
+  /* color: rgba(255, 0, 0, 0.815); */
 }
 .vegan {
-  background-color: hsla(144, 100%, 38%, 0.8);
+  color: hsla(144, 100%, 38%);
 }
 
 .priceWrap {

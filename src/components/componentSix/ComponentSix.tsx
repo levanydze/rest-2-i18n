@@ -1,12 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./ComponentSix.module.css";
 import { useTranslations } from "next-intl";
-// import images from "@/Restaurant-02/json/images.json";
-import ReservationContactForm from "@/src/components/Home/componentSix/ReservationContactForm/ReservationContactForm";
-// import { contactFormProps } from "@/components/ReservationContactForm/ReservationContactForm";
-import image from "@/public/images/homePage/ComponentSix.jpg";
+import ReservationContactForm from "./ReservationContactForm/ReservationContactForm";
 
-export default function ComponentSix() {
+export default function ComponentSix({ image }: { image: StaticImageData }) {
   const t = useTranslations("homePage.componentSix");
   return (
     <section className="section section-light">
@@ -14,7 +11,7 @@ export default function ComponentSix() {
         <div className={styles.threeWrapper}>
           <div className={styles.firstDiv}>
             <Image
-              className="shadow-4-m"
+              className="shadow-black-m"
               src={image}
               alt=""
               height={400}

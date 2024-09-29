@@ -2,7 +2,9 @@ import styles from "./MenuDetails.module.css";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import { menuCarPlaceHoldImg } from "@/Manager/navigation";
-import { notFound } from "next/navigation";
+import { newItem } from "@/public/image";
+import { FaHeart } from "react-icons/fa6";
+import { LuVegan } from "react-icons/lu";
 
 interface MenuDetailsProps {
   item: {
@@ -32,7 +34,7 @@ export default function MenuDetails({ item }: MenuDetailsProps) {
 
   return (
     <article className={styles.menuDetailsWrapper}>
-      <section className={styles.imgWrapper}>
+      <div className={styles.imgWrapper}>
         <Image
           priority
           src={item.image || menuCarPlaceHoldImg}
@@ -41,29 +43,42 @@ export default function MenuDetails({ item }: MenuDetailsProps) {
           width={1000}
           className={styles.image}
         />
-      </section>
-      <section className={styles.infoWrapper}>
+      </div>
+      <div className={styles.infoWrapper}>
         <h2 className={`heading3 font1 color1 ${styles.title}`}>{itemName}</h2>
         <p className={`paragraph ${styles.description}`}>{itemDescription}</p>
 
-        <div className={styles.specifications}>
-          {item.option1 && (
-            <p className={`${styles.tag} ${styles.vegan}`}>VEGAN</p>
-          )}
-          {item.option2 && (
-            <p className={`${styles.tag} ${styles.newItem}`}>NEW</p>
-          )}
-          {item.option3 && (
-            <p className={`${styles.tag} ${styles.favorite}`}>FAVORITE</p>
-          )}
-        </div>
+        <div className={` ${styles.tagsPriceWrap}`}>
+          <div className={styles.details}>
+            {item.option2 && (
+              <div className={styles.new}>
+                <Image
+                  className={styles.eachItem}
+                  src={newItem}
+                  width={50}
+                  height={40}
+                  alt="svgNew"
+                />
+              </div>
+            )}
+            {item.option3 && (
+              <div className={styles.heart}>
+                <FaHeart className={styles.eachItem} />
+              </div>
+            )}
+            {item.option1 && (
+              <div className={styles.vegan}>
+                <LuVegan className={styles.eachItem} />
+              </div>
+            )}
+          </div>
 
-        <div className={styles.priceWrapper}>
-          <h4 className={`font1 white heading4 ${styles.price}`}>
-            Price: {item.price} SEK
-          </h4>
+          <div className={styles.priceWrap}>
+            <p className={styles.price}>{item.price} </p>
+            <span>CHF</span>
+          </div>
         </div>
-      </section>
+      </div>
     </article>
   );
 }

@@ -7,8 +7,8 @@ import { dynamicPageRoute } from "@/Manager/navigation";
 import { useLocale } from "next-intl";
 import { menuCarPlaceHoldImg } from "@/Manager/navigation";
 import { FaHeart } from "react-icons/fa6";
-import { GrNew } from "react-icons/gr";
 import { LuVegan } from "react-icons/lu";
+import { newItem } from "@/public/image";
 
 export default function ServerCard({
   id,
@@ -59,7 +59,13 @@ export default function ServerCard({
           <div className={styles.details}>
             {option2 && (
               <div className={styles.new}>
-                <p className={styles.eachItem}>N</p>
+                <Image
+                  className={styles.eachItem}
+                  src={newItem}
+                  width={50}
+                  height={40}
+                  alt="svgNew"
+                />
               </div>
             )}
             {option3 && (

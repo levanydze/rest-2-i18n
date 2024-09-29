@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { sendEmail } from "./contactFunctional"; // Import email logic
 import styles from "./ReservationContactForm.module.css";
-import { ReservationFormProps } from "../../../types";
+import { ReservationFormProps } from "../../typesComponents";
 
 export default function ReservationContactForm({
   name,

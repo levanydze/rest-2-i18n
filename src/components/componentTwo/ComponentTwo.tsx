@@ -1,9 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./ComponentTwo.module.css";
 import { useTranslations } from "next-intl";
-import image from "@/public/images/homePage/ComponentTwo.jpg";
 
-export default function ComponentTwo() {
+export default function ComponentTwo({ image }: { image: StaticImageData }) {
   const t = useTranslations("homePage.componentTwo");
   return (
     <section className="section section-dark">
@@ -20,7 +19,7 @@ export default function ComponentTwo() {
           </div>
           <div className={styles.textWrapper}>
             <h2 className="heading2 color2">{t("title")}</h2>
-            <p className="paragraph white">{t("text")}</p>
+            <p className="paragraph gray3">{t("text")}</p>
           </div>
         </div>
       </div>

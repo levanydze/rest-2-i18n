@@ -1,7 +1,8 @@
-import Hero from "@/src/components/Hero/Hero";
-import ComponentNine from "@/src/components/Reservation/ComponentNine/ComponentNine";
+import ComponentNine from "@/src/components/ComponentNine/ComponentNine";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { getTranslations } from "next-intl/server";
+import Hero from "@/src/components/Hero/Hero";
+import { heroReservation } from "@/public/image";
 
 export async function generateMetadata() {
   const t = await getTranslations("reservationPage.metadata");
@@ -16,7 +17,7 @@ export default async function StoryPage() {
   const t = await getTranslations("");
   return (
     <div className="fadeOut">
-      <Hero homePage={false} />
+      <Hero homePage={false} image={heroReservation} />
       <ComponentNine />
       <Testimonials
         title1={t("homePage.testimonials.title1")}
