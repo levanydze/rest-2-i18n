@@ -1,18 +1,19 @@
 "use client";
-// import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 // Static metadata
-export const generateMetadata = () => {
-  // const t = useTranslations("errorPage.metadata");
+export async function generateMetadata() {
+  const t = await getTranslations("errorPage.metadata");
   return {
-    // title: t("title"),
-    // description: t("description"),
+    title: t("title"),
+    description: t("description"),
   };
-};
+}
 
 export default function ErrorPage() {
-  // const t = useTranslations("errorPage");
+  const t = useTranslations("errorPage");
 
   return (
     <section className={`section section-dark`}>
@@ -26,11 +27,11 @@ export default function ErrorPage() {
           }}
         >
           <h1 className="heading2">404</h1>
-          {/* <h2 className="heading3">{t("errorTitle")}</h2> */}
-          {/* <p className="paragraph">{t("errorDescription")}</p> */}
-          {/* <Link href="/" className={`button`}> */}
-          {/* {t("errorButton")} */}
-          {/* </Link> */}
+          <h2 className="heading3">{t("errorTitle")}</h2>
+          <p className="paragraph">{t("errorDescription")}</p>
+          <Link href="/" className={`button`}>
+            {t("errorButton")}
+          </Link>
         </div>
       </div>
     </section>
