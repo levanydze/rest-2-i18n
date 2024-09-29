@@ -48,20 +48,23 @@ export default async function Menu() {
                   <span className="heading3 white">{t("underCategory")}</span>
                 </div>
                 <div className={styles.itemContainer}>
-                  {sortedItems.map((item: MenuItemProps) => (
-                    <ServerCard
-                      key={item.id} // Remove the curly braces here, it's an actual value
-                      id={item.id}
-                      image={item.image}
-                      names={item.names}
-                      descriptions={item.descriptions}
-                      price={item.price}
-                      option1={item.option1 || false}
-                      option2={item.option2 || false}
-                      option3={item.option3 || false}
-                      priority={item.priority}
-                    />
-                  ))}
+                  {sortedItems.map(
+                    (item: MenuItemProps) =>
+                      !item.disable && (
+                        <ServerCard
+                          key={item.id} // Remove the curly braces here, it's an actual value
+                          id={item.id}
+                          image={item.image}
+                          names={item.names}
+                          descriptions={item.descriptions}
+                          price={item.price}
+                          option1={item.option1 || false}
+                          option2={item.option2 || false}
+                          option3={item.option3 || false}
+                          priority={item.priority}
+                        />
+                      )
+                  )}
                 </div>
               </div>
             );

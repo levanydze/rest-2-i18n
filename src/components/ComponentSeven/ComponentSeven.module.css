@@ -6,6 +6,7 @@
   height: 100%;
   position: absolute;
   margin-left: -150px;
+
   z-index: -1;
 }
 
@@ -17,6 +18,7 @@
 
 .textWrapper {
   width: 50%;
+  padding: 10% 0;
 }
 
 .titlesWrapper {
@@ -41,10 +43,36 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  min-height: 700px;
+  /* min-height: 700px; */
 }
 .chefContainer img {
   object-fit: contain;
   /* margin: 100px 0; */
   margin-left: -40px;
+  min-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .background {
+    margin-left: -15%;
+  }
+
+  .chefContainer {
+    min-height: 500px;
+  }
+  .chefContainer img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .lowerTextWrap {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .background {
+    margin-left: -20px;
+  }
 }

@@ -88,18 +88,13 @@
   width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .reservationWrapper {
     margin: 30px auto;
-    width: 80%;
+    width: 100%;
   }
 }
 
-@media (max-width: 450px) {
-  .reservationWrapper {
-    width: 90%;
-  }
-}
 @media (max-width: 800px) {
   .form div {
     flex-direction: column;
