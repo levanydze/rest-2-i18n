@@ -1,17 +1,9 @@
-import { redirect } from "next/navigation";
-import { defaultLocale, supportedLocales } from "@/Manager/navigation";
-import { useLocale } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
+interface Params {
+  locale: string; // Add other params if necessary
+}
+export default async function HomePage({ params }: { params: Params }) {
+  unstable_setRequestLocale(params.locale);
 
-export default function LangPage() {
-  const locale = useLocale();
-
-  // If the lang is not one of the supported languages, redirect to the default language
-  if (!supportedLocales.includes(locale)) {
-    redirect(`/${defaultLocale}`);
-  }
-
-  // If the language is valid, redirect to the language-specific page
-  redirect(`/${locale}`);
-
-  // No need to return anything, as the code won't reach this point
+  return <div></div>;
 }
