@@ -29,7 +29,7 @@ export default async function Menu() {
     <div className={styles.cardWrapper}>
       <section className="section section-medium">
         <div className={` container ${styles.container}`}>
-          {sortedCategories.map((category) => {
+          {sortedCategories.map((category, index) => {
             // Access category translations for the current locale, fallback to 'en'
             const categoryName =
               category.translations?.[locale] ||
@@ -42,7 +42,7 @@ export default async function Menu() {
             );
 
             return (
-              <div key={category.id} className={styles.menuWrapper}>
+              <div key={index} className={styles.menuWrapper}>
                 <div className={styles.menuTitles}>
                   <h3 className="font2 color4 heading2">{categoryName}</h3>
                   <span className="heading3 white">{t("underCategory")}</span>
@@ -52,7 +52,7 @@ export default async function Menu() {
                     (item: MenuItemProps) =>
                       !item.disable && (
                         <ServerCard
-                          key={item.id} // Remove the curly braces here, it's an actual value
+                          key={item.id}
                           id={item.id}
                           image={item.image}
                           names={item.names}

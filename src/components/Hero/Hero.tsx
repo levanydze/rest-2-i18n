@@ -26,12 +26,11 @@ export default function Hero({
           height={1500}
           width={3500}
           alt={`restraurant hero image ${companyName}`}
-          priority
         />
         <div className={styles.overlay}></div>
         <div className={`caption color1 ${styles.textWrapper}`}>
-          <div className={`section container`}>
-            <div className={styles.innerWrapper}>
+          <div className={`section `}>
+            <div className={`container ${styles.innerWrapper}`}>
               <Link href="/">
                 <Image
                   src={logo}

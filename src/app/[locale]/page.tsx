@@ -53,7 +53,7 @@ export default async function Home() {
       <ComponentThree image={pizza} />
       <ComponentSix image={pizza2} />
       <ComponentFour
-        images={[instagram1, instagram2, instagram3, instagram4]}
+        images={[instagram1, instagram2, instagram4, instagram3]}
       />
     </div>
   );

@@ -1,9 +1,14 @@
-import { unstable_setRequestLocale } from "next-intl/server";
-interface Params {
-  locale: string; // Add other params if necessary
-}
-export default async function HomePage({ params }: { params: Params }) {
-  unstable_setRequestLocale(params.locale);
+import { defaultLocale } from "@/Manager/navigation";
+import { useRouter } from "next/router";
 
-  return <div></div>;
+export default function IndexPage() {
+  const router = useRouter();
+
+  return (
+    <div
+      onClick={() => {
+        router.push("/", "/", { locale: defaultLocale });
+      }}
+    ></div>
+  );
 }
