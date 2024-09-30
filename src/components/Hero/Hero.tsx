@@ -4,6 +4,7 @@ import { companyName } from "@/Manager/info";
 import { useTranslations } from "next-intl";
 import { StaticImageData } from "next/image";
 import { logo } from "@/public/image";
+import Link from "next/link";
 
 export default function Hero({
   homePage,
@@ -31,12 +32,14 @@ export default function Hero({
         <div className={`caption color1 ${styles.textWrapper}`}>
           <div className={`section container`}>
             <div className={styles.innerWrapper}>
-              <Image
-                src={logo}
-                alt={`${companyName} logo`}
-                width={50}
-                height={30}
-              />
+              <Link href="/">
+                <Image
+                  src={logo}
+                  alt={`${companyName} logo`}
+                  width={50}
+                  height={30}
+                />
+              </Link>
               {homePage && (
                 <div className={styles.lowerDiv}>
                   <p>

@@ -50,6 +50,7 @@ const paytone = Paytone_One({
 
 import Header from "@/src/components/Header/Header";
 import Footer from "@/src/components/Footer/Footer";
+import LowerFoot from "@/src/components/FooterLow/LowerFoot";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -71,6 +72,7 @@ export default function LangLayout({
           <div>{children}</div>
           <Analytics />
           <Footer />
+          <LowerFoot />
         </div>
       </body>
     </html>

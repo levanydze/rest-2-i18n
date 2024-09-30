@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import { logoDark } from "@/public/image";
+import LowerFoot from "../FooterLow/LowerFoot";
 
 export default function Footer() {
   // Get the navigation items for the current language, default to English
