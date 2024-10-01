@@ -6,4 +6,5 @@ export const instagramUrl: string = "https://instagram.com/artoflevanidze";
 export const facebookUrl: string = "https://fb.com/levanidze";
 export const linkedinUrl: string = "https://linkedin.com/in/levanidze";
 export const address: string = "fb.com/levanidze";
+export const addressLink: string = "https://maps.app.goo.gl/ALviXyuFg37BugH28";
 export const email: string = "levanydze@gmail.com";

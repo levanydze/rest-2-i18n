@@ -51,17 +51,21 @@ const paytone = Paytone_One({
 import Header from "@/src/components/Header/Header";
 import Footer from "@/src/components/Footer/Footer";
 import LowerFoot from "@/src/components/FooterLow/LowerFoot";
+import { redirect } from "next/navigation";
+import { defaultLocale, supportedLocales } from "@/Manager/navigation"; // Import supported locales
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: {
-    locale: string;
-  };
+  params: { locale: string };
 }
+
 export default function LangLayout({
   children,
   params: { locale },
-}: Readonly<RootLayoutProps>) {
+}: RootLayoutProps) {
+  if (!supportedLocales.includes(locale)) {
+    return redirect(`/${defaultLocale}`);
+  }
   return (
     <html lang={locale}>
       <body

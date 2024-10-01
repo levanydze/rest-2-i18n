@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import { companyName } from "@/Manager/info";
+import { addressLink, companyName } from "@/Manager/info";
 import { useTranslations } from "next-intl";
 import { StaticImageData } from "next/image";
 import { logo } from "@/public/image";
@@ -46,11 +46,11 @@ export default function Hero({
                     <br />
                     <span>{t("hours")}</span>
                   </p>
-                  <p>
+                  <Link href={addressLink}>
                     <span>{t("address1")}</span>
                     <br />
                     <span>{t("address2")}</span>
-                  </p>
+                  </Link>
                 </div>
               )}
             </div>
