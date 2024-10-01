@@ -69,7 +69,7 @@ export default function LangLayout({
       >
         <div className="flex flex-col min-h-screen max-w-4xl mx-auto">
           <Header />
-          <div>{children}</div>
+          {children}
           <Analytics />
           <Footer />
           <LowerFoot />

@@ -6,6 +6,8 @@ import ComponentTwo from "@/src/components/componentTwo/ComponentTwo";
 import Hero from "@/src/components/Hero/Hero";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+
 import {
   heroMain,
   croisant,
@@ -39,8 +41,8 @@ export async function generateMetadata() {
   };
 }
 
-export default async function Home() {
-  const t = await getTranslations("homePage");
+export default function Home() {
+  const t = useTranslations("homePage");
 
   return (
     <div className="fadeOut">
