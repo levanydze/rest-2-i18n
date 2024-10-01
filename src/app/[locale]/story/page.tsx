@@ -5,6 +5,7 @@ import ComponentEight from "@/src/components/ComponentEight/ComponentEight";
 import ComponentSeven from "@/src/components/ComponentSeven/ComponentSeven";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
 import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 export async function generateMetadata() {
   const t = await getTranslations("storyPage.metadata");
@@ -15,8 +16,8 @@ export async function generateMetadata() {
 }
 
 // Dynamic server-side rendering function that accepts params
-export default async function StoryPage() {
-  const t = await getTranslations("");
+export default function StoryPage() {
+  const t = useTranslations("");
   return (
     <div className="fadeOut">
       <Hero homePage={false} image={heroStory} />
