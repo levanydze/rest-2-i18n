@@ -15,6 +15,7 @@ import {
   instagram2,
   instagram3,
   instagram4,
+  pizza4,
 } from "@/public/image";
 
 export default function Home() {
@@ -23,12 +24,12 @@ export default function Home() {
   return (
     <div className="fadeOut">
       <Hero homePage={true} image={heroMain} />
-      <ComponentTwo image={croisant} />
+      <ComponentTwo image={pizza} />
       <Testimonials
         title1={t("testimonials.title1")}
         title2={t("testimonials.title2")}
       />
-      <ComponentThree image={pizza} />
+      <ComponentThree image={pizza4} />
       <ComponentSix image={pizza2} />
       <ComponentFour
         images={[instagram1, instagram2, instagram4, instagram3]}

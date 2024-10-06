@@ -12,6 +12,7 @@ import heroReservation from "@/public/images/heros/heroReservation.jpg";
 import croisant from "@/public/images/heros/heroHome.jpg";
 import pizza from "@/public/images/ComponentThree.jpg";
 import pizza2 from "@/public/images/ComponentSix.jpg";
+import pizza4 from "@/public/images/pizza4.jpg";
 
 import instagram1 from "@/public/images/heros/heroHome.jpg";
 import instagram2 from "@/public/images/heros/heroMenu.jpg";
@@ -38,6 +39,7 @@ export {
   croisant,
   pizza,
   pizza2,
+  pizza4,
   instagram1,
   instagram2,
   instagram3,
