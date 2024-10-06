@@ -13,19 +13,6 @@ export async function generateMetadata() {
       template: `%s | ${t("title")}`,
     },
     description: t("description"),
-    openGraph: {
-      title: companyName,
-      description: t("description"),
-      url: companyDomain,
-      images: [
-        {
-          // url: "@/public/images/opengraph-image.jpg",
-          width: 800,
-          height: 600,
-          alt: companyName + companyDomain,
-        },
-      ],
-    },
   };
 }
 

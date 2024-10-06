@@ -1,11 +1,9 @@
-import { companyDomain, companyName } from "@/Manager/info";
 import ComponentFour from "@/src/components/componentFour/ComponentFour";
 import ComponentSix from "@/src/components/componentSix/ComponentSix";
 import ComponentThree from "@/src/components/componentThree/ComponentThree";
 import ComponentTwo from "@/src/components/componentTwo/ComponentTwo";
 import Hero from "@/src/components/Hero/Hero";
 import Testimonials from "@/src/components/Testimonials/Testimonials";
-import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 
 import {
@@ -18,28 +16,6 @@ import {
   instagram3,
   instagram4,
 } from "@/public/image";
-
-export async function generateMetadata() {
-  const t = await getTranslations("homePage.metadata");
-  return {
-    metadataBase: new URL(companyDomain),
-    title: t("title"),
-    description: t("description"),
-    openGraph: {
-      title: companyName,
-      description: t("description"),
-      url: companyDomain,
-      images: [
-        {
-          // url: "@/public/images/opengraph-image.jpg", MUST
-          width: 800,
-          height: 600,
-          alt: `${companyName} ${companyDomain}`,
-        },
-      ],
-    },
-  };
-}
 
 export default function Home() {
   const t = useTranslations("homePage");

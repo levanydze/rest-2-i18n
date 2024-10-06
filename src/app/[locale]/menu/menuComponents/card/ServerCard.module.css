@@ -1,3 +1,38 @@
+/* 
+.cardWrapper:nth-child(1) .priceWrap p {
+  animation: videoTest2 3s forwards;
+}
+@keyframes videoTest2 {
+  0% {
+    opacity: 1;
+    width: 300px;
+  }
+  50% {
+  opacity: 0;
+  width: 300px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.cardWrapper:nth-child(1) .priceWrap p {
+  animation: videoTest 4s forwards;
+}
+@keyframes videoTest {
+  0% {
+    opacity: 0;
+    width: 300px;
+  }
+  50% {
+  opacity: 0;
+  width: 300px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ */
+
 .cardWrapper {
   margin-bottom: 50px;
   width: 300px;
@@ -5,9 +40,6 @@
   background-color: var(--color5);
   border-radius: 10px;
   background: linear-gradient(236.43deg, #3f4c39 21.1%, #262626 68.07%);
-  /* box-shadow: -10px 10px 24px rgba(0, 0, 0, 0.25),
-    inset -40px 40px 90px rgba(0, 0, 0, 0.25);
-  border-radius: 8px; */
 }
 
 .cardWrapper img {
@@ -66,8 +98,6 @@
 .details svg,
 .details path {
   width: 30px;
-}
-.new img {
 }
 
 .heart {
